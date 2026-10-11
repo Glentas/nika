@@ -1,0 +1,268 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Экзамены, учебные заведения и храмы.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+examination_mingjing
+<- concept_imperial_examination;
+=> nrel_main_idtf:
+	[экзамен минцзин]
+	(* <- lang_ru;; *);
+	[mingjing examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[мин цзин]
+	(* <- lang_ru;; *);
+	[понимание канонов]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ступень танской системы кэцзюй, проверявшая знание канонических текстов и их
+	комментариев наизусть вместе с толкованием (китайский термин кэцзюй - 科舉).]
+	(* <- lang_ru;; *);;
+
+examination_jinshi
+<- concept_imperial_examination;
+=> nrel_main_idtf:
+	[экзамен цзиньши]
+	(* <- lang_ru;; *);
+	[jinshi examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзинь ши]
+	(* <- lang_ru;; *);
+	[выдвинутый учёный]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Высшая и наиболее престижная степень: дословно «представленный ко двору учёный».
+	Проверяла знание канонов, умение писать сочинение-рассуждение и стихи. С 1313 г.
+	программа опиралась на Четырёхкнижие в толковании Чжу Си.]
+	(* <- lang_ru;; *);;
+
+provincial_exam
+<- concept_imperial_examination;
+=> nrel_main_idtf:
+	[провинциальный экзамен]
+	(* <- lang_ru;; *);
+	[provincial examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сян ши]
+	(* <- lang_ru;; *);
+	[степень цзюйжэнь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Экзамен в провинции, проводившийся раз в три года; успешный кандидат получал степень
+	цзюйжэнь («рекомендованный человек»).]
+	(* <- lang_ru;; *);;
+
+metropolitan_exam
+<- concept_imperial_examination;
+=> nrel_main_idtf:
+	[столичный экзамен]
+	(* <- lang_ru;; *);
+	[metropolitan examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[хуэй ши]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Экзамен в столице весной года, следующего за провинциальным; давал право участвовать в
+	дворцовом экзамене.]
+	(* <- lang_ru;; *);;
+
+palace_exam
+<- concept_imperial_examination;
+=> nrel_main_idtf:
+	[дворцовый экзамен]
+	(* <- lang_ru;; *);
+	[palace examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[дянь ши]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Финальная ступень, принимавшаяся лично императором во дворце. Первые три места
+	(чжуанъюань, банъянь, таньхуа) давали немедленную придворную карьеру. Система кэцзюй
+	была отменена 2 сентября 1905 г.]
+	(* <- lang_ru;; *);;
+
+guozijian
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Гоцзыцзянь]
+	(* <- lang_ru;; *);
+	[Guozijian]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Императорская академия]
+	(* <- lang_ru;; *);
+	[Гоцзысюэ]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Высшее государственное учебное заведение имперского Китая, существовавшее с эпохи Суй до
+	1905 г.; пекинский комплекс совмещён с храмом Конфуция.]
+	(* <- lang_ru;; *);;
+
+yuelu_academy
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[академия Юэлу]
+	(* <- lang_ru;; *);
+	[Yuelu Academy]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Юэлу шу юань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Основана в 976 г. у подножия горы Юэлу близ Чанша; в 1167 г. здесь спорили Чжу Си и Чжан
+	Ши, в 1194 г. Чжу Си восстановил академию. Непрерывно работает более тысячи лет и ныне
+	входит в состав Хунаньского университета.]
+	(* <- lang_ru;; *);;
+
+bailudong_academy
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[академия Байлудун]
+	(* <- lang_ru;; *);
+	[White Deer Grotto Academy]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Байлу дун шу юань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Одна из «четырёх великих академий» Сун. Возрождена Чжу Си в 1179 г.; им написан её устав
+	(«Байлу дун шу юань цзе ши»), ставший образцом для дальнейших частных академий.]
+	(* <- lang_ru;; *);;
+
+donglin_academy
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[академия Дунлинь]
+	(* <- lang_ru;; *);
+	[Donglin Academy]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Дунлинь шу юань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Основана в Уси в 1604 г. Гу Сяньчэном; стала центром конфуцианской политической
+	оппозиции при поздней Мин, за что была разрушена евнухом Вэй Чжунсянем в 1625 г.]
+	(* <- lang_ru;; *);;
+
+sungkyunkwan
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[Сонгюнгван]
+	(* <- lang_ru;; *);
+	[Sungkyunkwan]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Государственная академия Чосон]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Высшее учебное заведение корейского государства Чосон, основано в 1398 г. в Ханьяне
+	(Сеул); готовило чиновников по программе Четырёхкнижия и Пятикнижия.]
+	(* <- lang_ru;; *);;
+
+yushima_seido
+<- concept_confucian_educational_institution;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[Юсима сэйдо]
+	(* <- lang_ru;; *);
+	[Yushima Seido]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сёхэйко]
+	(* <- lang_ru;; *);
+	[храм-школа в Эдо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Храм Конфуция и школа в Эдо; берёт начало от частной школы Хаяси Радзана, переданной
+	бакуфу в 1690 г. сёгуном Токугава Цунаёси. Стала предшественницей Токийского
+	университета.]
+	(* <- lang_ru;; *);;
+
+temple_confucius_qufu
+<- concept_confucian_temple;
+<- concept_confucian_institution;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[храм Конфуция в Цюйфу]
+	(* <- lang_ru;; *);
+	[Temple of Confucius in Qufu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Кун мяо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Возведён на месте дома Конфуция; по преданию, первое святилище основано в 478 г. до н.
+	э. князем Лу Ай-гуном. Многократно перестраивался, нынешний ансамбль в основном
+	минско-цинский. С 1994 г. - объект Всемирного наследия ЮНЕСКО вместе с кладбищем Кунлинь
+	и усадьбой семьи Кун.]
+	(* <- lang_ru;; *);
+=> nrel_located_in:
+	empire_china;;
+
+temple_confucius_beijing
+<- concept_confucian_temple;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[храм Конфуция в Пекине]
+	(* <- lang_ru;; *);
+	[Temple of Confucius in Beijing]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Кун мяо (Пекин)]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Построен в 1302 г. при династии Юань; здесь установлены стелы с именами более чем 51
+	тысячи цзиньши эпох Юань, Мин и Цин.]
+	(* <- lang_ru;; *);
+=> nrel_located_in:
+	empire_china;;
+
+temple_confucius_taipei
+<- concept_confucian_temple;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[храм Конфуция в Тайбэе]
+	(* <- lang_ru;; *);
+	[Temple of Confucius in Taipei]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Тайбэйский Кун мяо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Возведён в 1879 г. при династии Цин, разрушен в японский период и восстановлен в
+	1925-1939 гг. Ежегодно 28 сентября здесь проходит церемония ши дянь в память о дне
+	рождения Конфуция.]
+	(* <- lang_ru;; *);
+=> nrel_located_in:
+	empire_china;;
+
+temple_confucius_seoul
+<- concept_confucian_temple;
+<- concept_confucian_institution;
+=> nrel_main_idtf:
+	[храм Конфуция в Сеуле]
+	(* <- lang_ru;; *);
+	[Munmyo Shrine]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Мунмё]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Святилище Мунмё при Сонгюнгване, основано в 1398 г.; дважды в год здесь совершается
+	обряд сокчон (поклонение Конфуцию), включённый в список нематериального наследия Кореи.]
+	(* <- lang_ru;; *);
+=> nrel_located_in:
+	joseon_korea;;
+

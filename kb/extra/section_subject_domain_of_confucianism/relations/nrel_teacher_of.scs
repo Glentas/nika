@@ -1,0 +1,55 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_teacher_of - относительное понятие «является учителем*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_teacher_of
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[является учителем*]
+	(* <- lang_ru;; *);
+	[teacher of*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Отношение транзитивно по содержанию (Цзэн-цзы учил Цзы Сы, Цзы Сы - Мэн-цзы), поэтому
+	свойство антитранзитивности для него не объявляется.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_person_of_east_asian_tradition;
+=> nrel_second_domain: concept_person_of_east_asian_tradition;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_person_of_east_asian_tradition;
+				concept_person_of_east_asian_tradition
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (является учителем*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Является учителем* - бинарное ориентированное отношение, связывающее
+					деятеля конфуцианской традиции и его ученика.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_person_of_east_asian_tradition;
+				concept_person_of_east_asian_tradition
+			};;
+	*);;
+

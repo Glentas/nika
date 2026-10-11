@@ -1,0 +1,64 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_concept - абсолютное понятие «понятие конфуцианской традиции».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_concept
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[понятие конфуцианской традиции]
+	(* <- lang_ru;; *);
+	[concept of the Confucian tradition]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	concept_confucian_virtue;
+	concept_confucian_category;
+	concept_confucian_person_type;
+	concept_confucian_principle_doctrine;
+	concept_confucian_self_cultivation_method;
+	concept_confucian_ritual;
+	concept_confucian_social_relation;
+=> nrel_note:
+	[Общий класс для всех содержательных понятий учения; служит первым доменом отношения
+	«китайский термин*».]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		=> nrel_main_idtf:
+			[по способу употребления в учении]
+			(* <- lang_ru;; *);;
+		-> concept_confucian_virtue;;
+		-> concept_confucian_category;;
+		-> concept_confucian_principle_doctrine;;
+		-> concept_confucian_ritual;;
+		-> concept_confucian_social_relation;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (понятие конфуцианской традиции)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Понятие конфуцианской традиции - смысловая единица конфуцианского
+					учения, имеющая устойчивый китайский термин и входящая в состав
+					категориального аппарата школы.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_virtue;
+				concept_confucian_category;
+				concept_confucian_person_type;
+				concept_confucian_principle_doctrine
+			};;
+	*);;
+

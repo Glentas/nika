@@ -1,0 +1,43 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_japanese_confucianism - абсолютное понятие «японское конфуцианство».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_japanese_confucianism
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[японское конфуцианство]
+	(* <- lang_ru;; *);
+	[Japanese Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_school;
+=> nrel_note:
+	[Конфуцианство в Японии; официально утверждено сёгунатом Токугава в период Эдо
+	(1603-1868) усилиями Хаяси Радзана. Представлены и школа Чжу Си, и школа Ван Янмина
+	(Накаэ Тодзю).]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (японское конфуцианство)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Японское конфуцианство - направление конфуцианства, развивавшееся в
+					Японии и адаптировавшее китайские каноны к условиям сословного общества
+					периода Токугава.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school
+			};;
+	*);;
+

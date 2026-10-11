@@ -1,0 +1,56 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_influenced - относительное понятие «оказал влияние на*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_influenced
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[оказал влияние на*]
+	(* <- lang_ru;; *);
+	[influenced*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Связывает мыслителей разных школ и эпох, в том числе вне конфуцианства: буддийская
+	метафизика повлияла на Чжоу Дуньи и Чжу Си, «И цзин» - на всю космологию
+	неоконфуцианства.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_east_asian_philosopher;
+=> nrel_second_domain: concept_east_asian_philosopher;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_east_asian_philosopher;
+				concept_east_asian_philosopher
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (оказал влияние на*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Оказал влияние на* - бинарное ориентированное отношение, связывающее
+					восточноазиатского философа и мыслителя, воспринявшего его идеи.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_east_asian_philosopher;
+				concept_east_asian_philosopher
+			};;
+	*);;
+

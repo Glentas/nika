@@ -1,0 +1,394 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Мыслители сунско-минского неоконфуцианства.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+zhou_dunyi
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Чжоу Дуньи]
+	(* <- lang_ru;; *);
+	[Zhou Dunyi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжоу Ляньси]
+	(* <- lang_ru;; *);
+	[Чжоу Маошу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжоу Дуньи (1017-1073) из Даочжоу; в 1063 г. составил «Тайцзи ту шу» - пояснение к
+	космологической схеме, ставшее фундаментом неоконфуцианской метафизики. Наставник
+	братьев Чэн.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	cheng_hao;
+	cheng_yi;
+	zhang_zai;
+	zhu_xi;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	cheng_hao;
+	cheng_yi;;
+
+zhang_zai
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Чжан Цзай]
+	(* <- lang_ru;; *);
+	[Zhang Zai]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжан Хэнцюй]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжан Цзай (1020-1077) построил космологию на ци (материальной силе), рассматривая все
+	вещи как её сгущения и рассеяния. В «Си мин» провозгласил: «Небо - мой отец, земля - моя
+	мать... все люди - мои братья, все вещи - мои спутники». Ему принадлежат «четыре цели»:
+	установить сердце для Неба и земли, установить жизнь для народа, продолжить прерванное
+	учение, открыть мир для десяти тысяч поколений.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zhu_xi;
+	wang_fuzhi;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+cheng_hao
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Чэн Хао]
+	(* <- lang_ru;; *);
+	[Cheng Hao]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чэн Миндао]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чэн Хао (1032-1085), старший из братьев Чэн, уроженец Лояна. Развивал идею
+	«человеколюбия как единого тела со всеми вещами» и считал, что принцип присутствует в
+	сердце непосредственно.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zhu_xi;
+	lu_jiuyuan;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	yang_shi;;
+
+cheng_yi
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Чэн И]
+	(* <- lang_ru;; *);
+	[Cheng Yi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чэн Ичуань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чэн И (1033-1107), младший брат Чэн Хао, настаивал на исследовании вещей как пути
+	познания принципа и на «почтительной собранности» (цзин) как способе управления сердцем.
+	Его комментарий к «И цзину» стал образцом философского толкования канона.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zhu_xi;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	yang_shi;;
+
+yang_shi
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ян Ши]
+	(* <- lang_ru;; *);
+	[Yang Shi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ян Ши (1053-1135) - ученик братьев Чэн, перенёс их учение на юг. Предание «снег по
+	колено у дверей Чэн» (чэн мэнь ли сюэ) описывает, как он стоял на снегу, ожидая
+	окончания беседы учителя, и передаёт идеал почтительности ученика.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zhu_xi;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	luo_congyan;;
+
+luo_congyan
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ло Цунъянь]
+	(* <- lang_ru;; *);
+	[Luo Congyan]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ло Цунъянь (1072-1135) - звено передачи учения братьев Чэн на юг Китая, учитель Ли Туна.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	li_tong;;
+
+li_tong
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ли Тун]
+	(* <- lang_ru;; *);
+	[Li Tong]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ли Тун (1093-1163) - непосредственный учитель Чжу Си (с 1158 г.); передал ему линию
+	«практики в тишине» (цзин цзо) и толкование принципа.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	zhu_xi;;
+
+lu_zuqian
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Люй Цзуцянь]
+	(* <- lang_ru;; *);
+	[Lyu Zuqian]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Люй Цзуцянь (1137-1181) - историк и глава школы Цзиньхуа, в 1175 г. организовал встречу
+	у озера Эху, где спорили Чжу Си и Лу Цзююань; вместе с Чжу Си составил антологию «Цзинь
+	сы лу».]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+zhu_xi
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Чжу Си]
+	(* <- lang_ru;; *);
+	[Zhu Xi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжу Юаньхуэй]
+	(* <- lang_ru;; *);
+	[Чжу Чжунхуэй]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжу Си (1130-1200) - крупнейший систематизатор неоконфуцианства. Свёл Четырёхкнижие в
+	единый канон с собственными комментариями (1190 г.), возродил академию Байлудун и
+	составил для неё устав, читал лекции в академии Юэлу (1167, 1194 гг.). Занимал
+	должности, в том числе служил при дворе, но большей частью преподавал.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	yi_hwang;
+	yi_i;
+	hayashi_razan;
+	wang_yangming;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+lu_jiuyuan
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Лу Цзююань]
+	(* <- lang_ru;; *);
+	[Lu Jiuyuan]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Лу Сяншань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Лу Цзююань (1139-1193) - основатель «учения о сердце». Его формула «сердце и есть
+	принцип» и требование «сначала встать на ноги» противопоставлялись чжусианскому
+	«исследованию вещей». Спор 1175 г. на озере Эху закрепил разделение неоконфуцианства на
+	две ветви.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	yang_jian;
+	wang_yangming;
+=> nrel_lived_in_period:
+	dynasty_song;
+=> nrel_teacher_of:
+	yang_jian;;
+
+yang_jian
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ян Цзянь]
+	(* <- lang_ru;; *);
+	[Yang Jian]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ян Цыху]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ян Цзянь (1141-1226) - главный ученик Лу Цзююаня, доводивший тезис «сердце и есть
+	принцип» до отождествления сердца со всей реальностью.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+wang_yangming
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Ван Янмин]
+	(* <- lang_ru;; *);
+	[Wang Yangming]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ван Шоужэнь]
+	(* <- lang_ru;; *);
+	[Ван Боянь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ван Янмин (1472-1529) - минский философ и военачальник. Пережил «просветление у
+	драконьего поля» (лунчан у э) в 1508 г., находясь в ссылке в Гуйчжоу. Сформулировал
+	«единство знания и действия» и учение о врождённом знании. Его беседы записаны в «Чуань
+	си лу».]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	wang_ji;
+	nakae_toju;
+	yi_i;
+=> nrel_lived_in_period:
+	dynasty_ming;
+=> nrel_teacher_of:
+	wang_ji;;
+
+wang_ji
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ван Цзи]
+	(* <- lang_ru;; *);
+	[Wang Ji]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ван Лунси]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ван Цзи (1498-1583) - ближайший ученик Ван Янмина, распространявший учение школы сердца
+	в Цзяннани; сформулировал тезис о «четырёх отсутствиях» (сы у цзин).]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_ming;;
+
+wang_fuzhi
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Ван Фучжи]
+	(* <- lang_ru;; *);
+	[Wang Fuzhi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ван Чуаньшань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ван Фучжи (1619-1692) - мыслитель конца Мин, критиковавший отрыв принципа от
+	материальной силы: «Принцип - это принцип ци; вне ци нет принципа». Его сочинения были
+	изданы только в XIX в. и повлияли на реформаторов.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_ming;
+	dynasty_qing;;
+
+gu_yanwu
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Гу Яньу]
+	(* <- lang_ru;; *);
+	[Gu Yanwu]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Гу Яньу (1613-1682) - основоположник цинской «школы доказательных исследований» (као
+	чжэн сюэ), обратившейся от метафизики к текстологии, эпиграфике и фонологии канонов.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_ming;
+	dynasty_qing;;
+

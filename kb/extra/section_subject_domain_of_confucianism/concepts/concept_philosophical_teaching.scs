@@ -1,0 +1,64 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_philosophical_teaching - абсолютное понятие «философское учение».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_philosophical_teaching
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[философское учение]
+	(* <- lang_ru;; *);
+	[philosophical teaching]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	concept_confucianism;
+	concept_daoism;
+	concept_buddhism;
+	concept_legalism;
+	concept_mohism;
+=> nrel_note:
+	[Введено как внешнее надмножество максимального класса предметной области. В рамках
+	варианта «Конфуцианство» подробно описывается только конфуцианство; даосизм, буддизм,
+	легизм и моизм формализуются в объёме, необходимом для корректных
+	теоретико-множественных включений и для отношений «противопоставлено*» и «распространено
+	в*».]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		=> nrel_main_idtf:
+			[школы древнекитайской философии, значимые для конфуцианства]
+			(* <- lang_ru;; *);;
+		-> concept_confucianism;;
+		-> concept_daoism;;
+		-> concept_legalism;;
+		-> concept_mohism;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (философское учение)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Философское учение - класс целостных систем взглядов на мир, человека и
+					общество, которые имеют основателя либо канонический корпус текстов и
+					передаются в рамках устойчивой традиции последователей.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucianism;
+				concept_daoism;
+				concept_buddhism;
+				concept_legalism
+			};;
+	*);;
+

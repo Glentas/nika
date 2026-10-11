@@ -1,0 +1,1412 @@
+{
+  "version": 20200513,
+  "comment": "Файл собран вручную вместо экспорта из Wit.ai: внешний сервис для классификации не используется, сообщения классифицирует агент action_alternative_message_topic_classification по логическим правилам. Структура приведена к формату экспорта Wit.ai, чтобы выполнить требование методических указаний о составе каталога classification/.",
+  "intents": [
+    {
+      "id": "about_entity",
+      "name": "about_entity",
+      "entities": [
+        {
+          "name": "rrel_entity"
+        }
+      ],
+      "utterances": [
+        {
+          "text": "Что такое конфуцианство?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucianism",
+              "body": "конфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Что означает конфуцианство?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucianism",
+              "body": "конфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Что такое неоконфуцианство?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_neo_confucianism",
+              "body": "неоконфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Что означает неоконфуцианство?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_neo_confucianism",
+              "body": "неоконфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Что такое конфуцианская добродетель?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_virtue",
+              "body": "конфуцианская добродетель"
+            }
+          ]
+        },
+        {
+          "text": "Что означает конфуцианская добродетель?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_virtue",
+              "body": "конфуцианская добродетель"
+            }
+          ]
+        },
+        {
+          "text": "Что такое каноническое собрание?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_canon",
+              "body": "каноническое собрание"
+            }
+          ]
+        },
+        {
+          "text": "Что означает каноническое собрание?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_canon",
+              "body": "каноническое собрание"
+            }
+          ]
+        },
+        {
+          "text": "Что такое имперский экзамен?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_imperial_examination",
+              "body": "имперский экзамен"
+            }
+          ]
+        },
+        {
+          "text": "Что означает имперский экзамен?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_imperial_examination",
+              "body": "имперский экзамен"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Конфуция?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_confucius",
+              "body": "учение Конфуция"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Конфуция?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_confucius",
+              "body": "учение Конфуция"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_mencius",
+              "body": "учение Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_mencius",
+              "body": "учение Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Сюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_xunzi",
+              "body": "учение Сюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Сюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_xunzi",
+              "body": "учение Сюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Чжу Си?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_zhu_xi",
+              "body": "учение Чжу Си"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Чжу Си?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_zhu_xi",
+              "body": "учение Чжу Си"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Ван Янмина?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_wang_yangming",
+              "body": "учение Ван Янмина"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Ван Янмина?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_wang_yangming",
+              "body": "учение Ван Янмина"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Ли Хвана?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_yi_hwang",
+              "body": "учение Ли Хвана"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Ли Хвана?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_yi_hwang",
+              "body": "учение Ли Хвана"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Хаяси Радзана?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_hayashi_razan",
+              "body": "учение Хаяси Радзана"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Хаяси Радзана?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "school_hayashi_razan",
+              "body": "учение Хаяси Радзана"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Конфуций?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "confucius",
+              "body": "Конфуций"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Конфуций?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "confucius",
+              "body": "Конфуций"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mencius",
+              "body": "Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mencius",
+              "body": "Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Сюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "xunzi",
+              "body": "Сюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Сюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "xunzi",
+              "body": "Сюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Чжу Си?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "zhu_xi",
+              "body": "Чжу Си"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Чжу Си?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "zhu_xi",
+              "body": "Чжу Си"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Ван Янмин?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "wang_yangming",
+              "body": "Ван Янмин"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Ван Янмин?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "wang_yangming",
+              "body": "Ван Янмин"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Ли Хван?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "yi_hwang",
+              "body": "Ли Хван"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Ли Хван?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "yi_hwang",
+              "body": "Ли Хван"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Дун Чжуншу?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "dong_zhongshu",
+              "body": "Дун Чжуншу"
+            }
+          ]
+        },
+        {
+          "text": "Кто такой Дун Чжуншу?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "dong_zhongshu",
+              "body": "Дун Чжуншу"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Лунь юй?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "analects",
+              "body": "Лунь юй"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Лунь юй?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "analects",
+              "body": "Лунь юй"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mencius_book",
+              "body": "Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Мэн-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mencius_book",
+              "body": "Мэн-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Четырёхкнижие?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "four_books",
+              "body": "Четырёхкнижие"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Четырёхкнижие?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "four_books",
+              "body": "Четырёхкнижие"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Пятикнижие?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "five_classics",
+              "body": "Пятикнижие"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Пятикнижие?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "five_classics",
+              "body": "Пятикнижие"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Четырёхкнижие с комментариями и толкованиями?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "four_books_with_commentaries",
+              "body": "Четырёхкнижие с комментариями и толкованиями"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Четырёхкнижие с комментариями и толкованиями?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "four_books_with_commentaries",
+              "body": "Четырёхкнижие с комментариями и толкованиями"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Чуань си лу?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "chuanxilu",
+              "body": "Чуань си лу"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Чуань си лу?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "chuanxilu",
+              "body": "Чуань си лу"
+            }
+          ]
+        },
+        {
+          "text": "Что такое жэнь?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "ren",
+              "body": "жэнь"
+            }
+          ]
+        },
+        {
+          "text": "Что означает жэнь?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "ren",
+              "body": "жэнь"
+            }
+          ]
+        },
+        {
+          "text": "Что такое и?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "yi",
+              "body": "и"
+            }
+          ]
+        },
+        {
+          "text": "Что означает и?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "yi",
+              "body": "и"
+            }
+          ]
+        },
+        {
+          "text": "Что такое ли?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "li_ritual",
+              "body": "ли"
+            }
+          ]
+        },
+        {
+          "text": "Что означает ли?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "li_ritual",
+              "body": "ли"
+            }
+          ]
+        },
+        {
+          "text": "Что такое сяо?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "xiao",
+              "body": "сяо"
+            }
+          ]
+        },
+        {
+          "text": "Что означает сяо?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "xiao",
+              "body": "сяо"
+            }
+          ]
+        },
+        {
+          "text": "Что такое чжи?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "zhi_wisdom",
+              "body": "чжи"
+            }
+          ]
+        },
+        {
+          "text": "Что означает чжи?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "zhi_wisdom",
+              "body": "чжи"
+            }
+          ]
+        },
+        {
+          "text": "Что такое цзюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "junzi",
+              "body": "цзюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что означает цзюнь-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "junzi",
+              "body": "цзюнь-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что такое тайцзи?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "taiji",
+              "body": "тайцзи"
+            }
+          ]
+        },
+        {
+          "text": "Что означает тайцзи?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "taiji",
+              "body": "тайцзи"
+            }
+          ]
+        },
+        {
+          "text": "Что такое ци?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "qi_material_force",
+              "body": "ци"
+            }
+          ]
+        },
+        {
+          "text": "Что означает ци?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "qi_material_force",
+              "body": "ци"
+            }
+          ]
+        },
+        {
+          "text": "Что такое золотое правило?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "golden_rule",
+              "body": "золотое правило"
+            }
+          ]
+        },
+        {
+          "text": "Что означает золотое правило?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "golden_rule",
+              "body": "золотое правило"
+            }
+          ]
+        },
+        {
+          "text": "Что такое единство знания и действия?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "unity_of_knowledge_and_action",
+              "body": "единство знания и действия"
+            }
+          ]
+        },
+        {
+          "text": "Что означает единство знания и действия?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "unity_of_knowledge_and_action",
+              "body": "единство знания и действия"
+            }
+          ]
+        },
+        {
+          "text": "Что такое врождённое знание?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "innate_knowledge",
+              "body": "врождённое знание"
+            }
+          ]
+        },
+        {
+          "text": "Что означает врождённое знание?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "innate_knowledge",
+              "body": "врождённое знание"
+            }
+          ]
+        },
+        {
+          "text": "Что такое мандат Неба?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mandate_of_heaven",
+              "body": "мандат Неба"
+            }
+          ]
+        },
+        {
+          "text": "Что означает мандат Неба?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "mandate_of_heaven",
+              "body": "мандат Неба"
+            }
+          ]
+        },
+        {
+          "text": "Что такое исправление имён?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "rectification_of_names",
+              "body": "исправление имён"
+            }
+          ]
+        },
+        {
+          "text": "Что означает исправление имён?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "rectification_of_names",
+              "body": "исправление имён"
+            }
+          ]
+        },
+        {
+          "text": "Что такое Гоцзыцзянь?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "guozijian",
+              "body": "Гоцзыцзянь"
+            }
+          ]
+        },
+        {
+          "text": "Что означает Гоцзыцзянь?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "guozijian",
+              "body": "Гоцзыцзянь"
+            }
+          ]
+        },
+        {
+          "text": "Что такое династия Сун?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "dynasty_song",
+              "body": "династия Сун"
+            }
+          ]
+        },
+        {
+          "text": "Что означает династия Сун?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "dynasty_song",
+              "body": "династия Сун"
+            }
+          ]
+        },
+        {
+          "text": "Что такое императорский Китай?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "empire_china",
+              "body": "императорский Китай"
+            }
+          ]
+        },
+        {
+          "text": "Что означает императорский Китай?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "empire_china",
+              "body": "императорский Китай"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение чань?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "teaching_chan",
+              "body": "учение чань"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение чань?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "teaching_chan",
+              "body": "учение чань"
+            }
+          ]
+        },
+        {
+          "text": "Что такое учение Лао-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "teaching_laozi",
+              "body": "учение Лао-цзы"
+            }
+          ]
+        },
+        {
+          "text": "Что означает учение Лао-цзы?",
+          "intent": "about_entity",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "teaching_laozi",
+              "body": "учение Лао-цзы"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subdividing",
+      "name": "subdividing",
+      "entities": [
+        {
+          "name": "rrel_entity"
+        }
+      ],
+      "utterances": [
+        {
+          "text": "Каким бывает философское учение?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_philosophical_teaching",
+              "body": "философское учение"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется философское учение?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_philosophical_teaching",
+              "body": "философское учение"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается философское учение?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_philosophical_teaching",
+              "body": "философское учение"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает конфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucianism",
+              "body": "конфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется конфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucianism",
+              "body": "конфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается конфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucianism",
+              "body": "конфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает неоконфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_neo_confucianism",
+              "body": "неоконфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется неоконфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_neo_confucianism",
+              "body": "неоконфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается неоконфуцианство?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_neo_confucianism",
+              "body": "неоконфуцианство"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает деятель конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_person_of_confucian_tradition",
+              "body": "деятель конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется деятель конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_person_of_confucian_tradition",
+              "body": "деятель конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается деятель конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_person_of_confucian_tradition",
+              "body": "деятель конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает конфуцианский текст?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_text",
+              "body": "конфуцианский текст"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется конфуцианский текст?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_text",
+              "body": "конфуцианский текст"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается конфуцианский текст?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_text",
+              "body": "конфуцианский текст"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает понятие конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_concept",
+              "body": "понятие конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется понятие конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_concept",
+              "body": "понятие конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается понятие конфуцианской традиции?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_concept",
+              "body": "понятие конфуцианской традиции"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает конфуцианская философская категория?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_category",
+              "body": "конфуцианская философская категория"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется конфуцианская философская категория?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_category",
+              "body": "конфуцианская философская категория"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается конфуцианская философская категория?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_category",
+              "body": "конфуцианская философская категория"
+            }
+          ]
+        },
+        {
+          "text": "Каким бывает конфуцианский институт?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_institution",
+              "body": "конфуцианский институт"
+            }
+          ]
+        },
+        {
+          "text": "На что декомпозируется конфуцианский институт?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_institution",
+              "body": "конфуцианский институт"
+            }
+          ]
+        },
+        {
+          "text": "На что разбивается конфуцианский институт?",
+          "intent": "subdividing",
+          "entities": [
+            {
+              "entity": "rrel_entity",
+              "role": "rrel_entity",
+              "value": "concept_confucian_institution",
+              "body": "конфуцианский институт"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "rrel_entity",
+      "name": "rrel_entity",
+      "lookups": [
+        "free-text",
+        "keywords"
+      ],
+      "roles": [
+        "rrel_entity"
+      ],
+      "values": [
+        "Ван Янмин",
+        "Гоцзыцзянь",
+        "Дун Чжуншу",
+        "Конфуций",
+        "Ли Хван",
+        "Лунь юй",
+        "Мэн-цзы",
+        "Пятикнижие",
+        "Сюнь-цзы",
+        "Четырёхкнижие",
+        "Четырёхкнижие с комментариями и толкованиями",
+        "Чжу Си",
+        "Чуань си лу",
+        "врождённое знание",
+        "деятель конфуцианской традиции",
+        "династия Сун",
+        "единство знания и действия",
+        "жэнь",
+        "золотое правило",
+        "и",
+        "императорский Китай",
+        "имперский экзамен",
+        "исправление имён",
+        "каноническое собрание",
+        "конфуцианская добродетель",
+        "конфуцианская философская категория",
+        "конфуцианский институт",
+        "конфуцианский текст",
+        "конфуцианство",
+        "ли",
+        "мандат Неба",
+        "неоконфуцианство",
+        "понятие конфуцианской традиции",
+        "сяо",
+        "тайцзи",
+        "учение Ван Янмина",
+        "учение Конфуция",
+        "учение Лао-цзы",
+        "учение Ли Хвана",
+        "учение Мэн-цзы",
+        "учение Сюнь-цзы",
+        "учение Хаяси Радзана",
+        "учение Чжу Си",
+        "учение чань",
+        "философское учение",
+        "цзюнь-цзы",
+        "ци",
+        "чжи"
+      ]
+    }
+  ],
+  "traits": []
+}

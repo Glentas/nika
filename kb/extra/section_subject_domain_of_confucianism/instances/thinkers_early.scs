@@ -1,0 +1,447 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Мыслители раннего конфуцианства.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+confucius
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_confucian_official;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Конфуций]
+	(* <- lang_ru;; *);
+	[Confucius]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Кун Цю]
+	(* <- lang_ru;; *);
+	[Кун Чжун-ни]
+	(* <- lang_ru;; *);
+	[Учитель Кун]
+	(* <- lang_ru;; *);
+	[Кун-цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Конфуций (551-479 до н. э.), имя Цю, второе имя Чжун-ни, происходил из царства Лу.
+	Недолго занимал должности управляющего складаом, смотрителя пастбищ, а затем - министра
+	общественных работ и министра юстиции царства Лу (около 500 г. до н. э.). Тринадцать лет
+	странствовал по царствам, не получив применения своему учению, и вернулся в Лу, где
+	занимался преподаванием и редактированием канонов.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+	state_qi;
+	state_wei;
+=> nrel_influenced:
+	mencius;
+	xunzi;
+	zengzi;
+	zisi;
+	dong_zhongshu;
+	han_yu;
+	zhu_xi;
+	yi_hwang;
+	hayashi_razan;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;
+=> nrel_teacher_of:
+	yan_hui;
+	zi_gong;
+	zi_lu;
+	zi_xia;
+	zengzi;
+	you_ruo;
+	ran_qiu;;
+
+mencius
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Мэн-цзы]
+	(* <- lang_ru;; *);
+	[Mencius]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Мэн Кэ]
+	(* <- lang_ru;; *);
+	[Мэн-цзы]
+	(* <- lang_ru;; *);
+	[второй совершенномудрый после Конфуция]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мэн-цзы (ок. 372-289 до н. э.) из царства Цзоу. По преданию, учился у последователей Цзы
+	Сы, внука Конфуция. Странствовал по царствам Ци, Лян (Вэй) и Сун, убеждая правителей
+	следовать «гуманному правлению» (жэнь чжэн). В эпоху Сун получил титул «второго
+	совершенномудрого» (я шэн).]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_zou;
+	state_qi;
+	state_wei;
+=> nrel_influenced:
+	lu_jiuyuan;
+	wang_yangming;
+	dong_zhongshu;
+=> nrel_lived_in_period:
+	period_warring_states;
+	dynasty_zhou;;
+
+xunzi
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Сюнь-цзы]
+	(* <- lang_ru;; *);
+	[Xunzi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сюнь Куан]
+	(* <- lang_ru;; *);
+	[Сюнь Цин]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сюнь-цзы (ок. 313-238 до н. э.) родом из царства Чжао, трижды занимал должность цзи цзю
+	(старейшины учёных) в академии Цися царства Ци, позже был управляющим Ланьлином в
+	царстве Чу. Его ученики Хань Фэй и Ли Сы стали легистами.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_zhao;
+	state_qi;
+	state_chu;
+=> nrel_influenced:
+	han_fei;
+	li_si;
+	dong_zhongshu;
+=> nrel_lived_in_period:
+	period_warring_states;
+	dynasty_zhou;
+=> nrel_teacher_of:
+	han_fei;
+	li_si;;
+
+zengzi
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Цзэн-цзы]
+	(* <- lang_ru;; *);
+	[Zengzi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Цзэн Шэнь]
+	(* <- lang_ru;; *);
+	[Цзэн Юй]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзэн Шэнь (505-435 до н. э.) - младший на 46 лет ученик Конфуция, славился сыновней
+	почтительностью. Традиция связывает с ним «Да сюэ» и «Сяо цзин». В «Лунь юй» (1.4) ему
+	принадлежит изречение о троекратной самопроверке.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+=> nrel_influenced:
+	zisi;
+	mencius;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;
+=> nrel_teacher_of:
+	zisi;;
+
+zisi
+<- concept_confucian_thinker;
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Цзы-сы]
+	(* <- lang_ru;; *);
+	[Zisi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Кун Цзи]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзы-сы (483-402 до н. э.), внук Конфуция; по преданию, ученик Цзэн-цзы и учитель
+	Мэн-цзы. Традиция приписывает ему «Чжун юн». В 1993 г. в могильнике Годянь (Гуодянь)
+	найдены бамбуковые тексты, связываемые с его школой.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+=> nrel_influenced:
+	mencius;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	period_warring_states;
+=> nrel_teacher_of:
+	mencius;;
+
+yan_hui
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Янь Хуэй]
+	(* <- lang_ru;; *);
+	[Yan Hui]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Янь Юань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Янь Хуэй (521-481 до н. э.) - любимый ученик Конфуция, образец бедности и постоянства в
+	жэнь. В «Лунь юй» (6.11) Конфуций восклицает: «Каким достойным был Хуэй! Горсть риса,
+	ковш воды, убогая лачуга - другие не вынесли бы такого горя, а Хуэй не терял радости».]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;;
+
+zi_gong
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Цзы-Гун]
+	(* <- lang_ru;; *);
+	[Zigong]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Дуаньму Сы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзы-Гун (520-456 до н. э.) из царства Вэй - красноречивый ученик, ставший богатым купцом
+	и дипломатом. Именно ему в «Лунь юй» (15.24) Конфуций излагает золотое правило: «Того,
+	чего не желаешь себе, не делай другим».]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_wei;
+	state_lu;
+	state_qi;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;;
+
+zi_lu
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Цзы-Лу]
+	(* <- lang_ru;; *);
+	[Zilu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжун Ю]
+	(* <- lang_ru;; *);
+	[Цзи Лу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзы-Лу (542-480 до н. э.) - ученик воинственного нрава, погиб в междоусобице в царстве
+	Вэй, по преданию - со словами о том, что нельзя умереть с развязанными завязками шапки,
+	то есть нарушив ритуал.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+	state_wei;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;;
+
+zi_xia
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Цзы-Ся]
+	(* <- lang_ru;; *);
+	[Zixia]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Бу Шан]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзы-Ся (род. 507 до н. э.) - ученик, с которым традиция связывает начало школы
+	текстологического изучения канонов; после смерти Конфуция преподавал в царстве Вэй, в
+	местности Си хэ. Ему приписывают ряд изречений «Лунь юй» о учении и о вэнь.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+	state_wei;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	period_warring_states;;
+
+you_ruo
+<- concept_confucian_disciple;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ю Жо]
+	(* <- lang_ru;; *);
+	[You Ruo]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ю-цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ю Жо (518-? до н. э.). Ему принадлежит открывающая «Лунь юй» связка мыслей: «Человек,
+	который почтителен к родителям и уважителен к старшим братьям, редко склонен к мятежу»
+	(1.2), где сяо и ди названы корнем жэнь.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+=> nrel_lived_in_period:
+	period_spring_autumn;;
+
+ran_qiu
+<- concept_confucian_disciple;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Жань Цю]
+	(* <- lang_ru;; *);
+	[Ran Qiu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Жань Ю]
+	(* <- lang_ru;; *);
+	[Жань Цзю]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Жань Цю (522-? до н. э.) служил главой дома Цзи в царстве Лу и организовал возвращение
+	Конфуция из изгнания (484 г. до н. э.), при этом Конфуций упрекал его за помощь Цзи Сунь
+	в чрезмерных поборах.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+=> nrel_lived_in_period:
+	period_spring_autumn;;
+
+laozi
+<- concept_east_asian_philosopher;
+<- concept_chinese_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Лао-цзы]
+	(* <- lang_ru;; *);
+	[Laozi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Лао Дань]
+	(* <- lang_ru;; *);
+	[Ли Эр]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Полумифическая фигура, автор «Дао дэ цзина». В «Ши цзи» описана встреча Лао-цзы с
+	Конфуцием, после которой Конфуций якобы сравнил его с драконом. Приведён здесь как
+	представитель даосизма - учения, полемически значимого для конфуцианства.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_chu;
+=> nrel_influenced:
+	zhou_dunyi;
+=> nrel_lived_in_period:
+	period_spring_autumn;
+	dynasty_zhou;;
+
+zhuangzi
+<- concept_east_asian_philosopher;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Чжуан-цзы]
+	(* <- lang_ru;; *);
+	[Zhuangzi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжуан Чжоу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжуан Чжоу (ок. 369-286 до н. э.) из царства Сун, автор трактата «Чжуан-цзы». Его притчи
+	полемичны по отношению к конфуцианским нормам.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_song;
+=> nrel_lived_in_period:
+	period_warring_states;;
+
+mo_di
+<- concept_east_asian_philosopher;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Мо Ди]
+	(* <- lang_ru;; *);
+	[Mo Di]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Мо-цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мо Ди (ок. 470-391 до н. э.) - основатель моизма, ремесленник и организатор
+	оборонительных союзов.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_lu;
+	state_song;
+=> nrel_lived_in_period:
+	period_warring_states;;
+
+han_fei
+<- concept_east_asian_philosopher;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Хань Фэй]
+	(* <- lang_ru;; *);
+	[Han Fei]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Хань Фэй-цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Хань Фэй (ок. 280-233 до н. э.) из царства Хань, ученик Сюнь-цзы, главный теоретик
+	легизма; погиб в заключении в Цинь, по преданию - по навету Ли Сы.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_han;
+	state_qin;
+=> nrel_lived_in_period:
+	period_warring_states;;
+
+li_si
+<- concept_east_asian_philosopher;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ли Сы]
+	(* <- lang_ru;; *);
+	[Li Si]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ли Сы (ок. 280-208 до н. э.), ученик Сюнь-цзы, канцлер империи Цинь; инициировал в 213
+	г. до н. э. сожжение книг, прежде всего «Ши цзина» и «Шу цзина», и казнь 460
+	конфуцианцев, что стало травмой конфуцианской традиции.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	state_qin;
+	empire_china;
+=> nrel_lived_in_period:
+	period_warring_states;
+	dynasty_qin;;
+

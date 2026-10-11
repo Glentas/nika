@@ -1,0 +1,81 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Конфуцианские чиновники.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+fan_zhongyan
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Фань Чжунъянь]
+	(* <- lang_ru;; *);
+	[Fan Zhongyan]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Фань Чжунъянь (989-1052), сунский канцлер и реформатор. Его девиз «сначала позаботиться
+	о заботах мира и лишь потом радоваться его радостям» стал образцом конфуцианской
+	гражданской ответственности.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+sima_guang
+<- concept_confucian_official;
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Сыма Гуан]
+	(* <- lang_ru;; *);
+	[Sima Guang]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Сыма Гуан (1019-1086), сунский историк и консервативный политик, составитель «Цзычжи
+	тунцзянь» («Всеобщего зеркала, управлению помогающего», 1066-1084).]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+wang_anshi
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Ван Аньши]
+	(* <- lang_ru;; *);
+	[Wang Anshi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ван Аньши (1021-1086), сунский реформатор, провёл «новые законы» (1069-1085) и
+	реформировал экзаменационную программу, заменив стихосложение толкованием канонов. Его
+	спор с Сыма Гуаном - образец конфуцианской внутришкольной полемики.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_song;;
+
+hai_rui
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+=> nrel_main_idtf:
+	[Хай Жуй]
+	(* <- lang_ru;; *);
+	[Hai Rui]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Хай Жуй (1514-1587), минский чиновник, вошедший в традицию как образец неподкупности и
+	готовности обличать самого императора (меморандум 1566 г.).]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_ming;;
+

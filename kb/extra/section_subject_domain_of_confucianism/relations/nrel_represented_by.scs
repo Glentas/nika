@@ -1,0 +1,56 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_represented_by - относительное понятие «представлено последователем*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_represented_by
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[представлено последователем*]
+	(* <- lang_ru;; *);
+	[represented by*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[В отличие от «основано*» не требует первенства: направление может быть представлено
+	многими учениками и комментаторами.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_confucian_school;
+=> nrel_second_domain: concept_person_of_confucian_tradition;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_confucian_school;
+				concept_person_of_confucian_tradition
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (представлено последователем*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Представлено последователем* - бинарное ориентированное отношение,
+					связывающее направление конфуцианства и деятеля конфуцианской традиции,
+					чья деятельность относится к этому направлению.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school;
+				concept_person_of_confucian_tradition
+			};;
+	*);;
+

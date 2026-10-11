@@ -1,0 +1,58 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_neo_confucianism - абсолютное понятие «неоконфуцианство».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_neo_confucianism
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[неоконфуцианство]
+	(* <- lang_ru;; *);
+	[Neo-Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_school;
+=> nrel_inclusion:
+	concept_cheng_zhu_school;
+	concept_lu_wang_school;
+=> nrel_note:
+	[Сунско-минское неоконфуцианство (ли сюэ в широком смысле), XI-XV вв. Реконструкция
+	конфуцианства с использованием категориального аппарата буддизма и даосизма; ключевые
+	категории - ли (принцип), ци (материальная сила), тайцзи (Великий предел).]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		=> nrel_main_idtf:
+			[по трактовке первоначала]
+			(* <- lang_ru;; *);;
+		-> concept_cheng_zhu_school;;
+		-> concept_lu_wang_school;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (неоконфуцианство)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Неоконфуцианство - направление конфуцианства, возникшее в эпоху Сун как
+					ответ на вызов буддийской метафизики и построившее собственную
+					космологически обоснованную систему категорий.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school;
+				concept_cheng_zhu_school;
+				concept_lu_wang_school
+			};;
+	*);;
+

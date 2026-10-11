@@ -1,0 +1,592 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Направления (школы) конфуцианства - экземпляры максимального класса.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+school_confucius
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_early_confucianism;
+<- concept_philosophical_teaching;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Конфуция]
+	(* <- lang_ru;; *);
+	[teaching of Confucius]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[жу цзя]
+	(* <- lang_ru;; *);
+	[школа книжников]
+	(* <- lang_ru;; *);
+	[конфуцианская ортодоксия]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Исходная форма конфуцианства: учение изложено не самим Конфуцием в виде трактата, а в
+	записи его бесед («Лунь юй»), составленной учениками и последователями учеников. В «Ши
+	цзи» Сыма Цянь говорится о трёх тысячах учеников, из которых семьдесят два «преуспели в
+	шести искусствах».]
+	(* <- lang_ru;; *);
+=> nrel_founded_by:
+	confucius;
+=> nrel_includes_doctrine:
+	golden_rule;
+	rectification_of_names;
+	doctrine_of_the_mean;
+	mandate_of_heaven;
+	three_guides_eight_steps;
+=> nrel_opposed_to:
+	teaching_mo_di;
+	teaching_laozi;
+	teaching_han_fei;
+	teaching_zhuangzi;
+	teaching_chan;
+	teaching_shang_yang;
+=> nrel_promotes_virtue:
+	ren;
+	li_ritual;
+	yi;
+	zhi_wisdom;
+	xiao;
+	shu_reciprocity;
+	zhong_loyalty;
+	wen_culture;
+=> nrel_represented_by:
+	yan_hui;
+	zi_gong;
+	zi_lu;
+	zi_xia;
+	zengzi;
+	zisi;
+	you_ruo;
+	ran_qiu;
+=> nrel_spread_in:
+	state_lu;
+	state_qi;
+	empire_china;;
+
+school_mencius
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_early_confucianism;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Мэн-цзы]
+	(* <- lang_ru;; *);
+	[teaching of Mencius]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[мэн сюэ]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мэн-цзы развил линию Конфуция, доказывая врождённость добра в человеческой природе через
+	«четыре начала» (сы дуань): сострадание, стыд, уступчивость и различение правильного и
+	неправильного. Отсюда следует и политический тезис о праве народа свергнуть правителя,
+	утратившего мандат Неба.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_confucius;
+=> nrel_founded_by:
+	mencius;
+=> nrel_includes_doctrine:
+	innate_goodness_of_nature;
+	mandate_of_heaven;
+=> nrel_opposed_to:
+	teaching_mo_di;
+	school_xunzi;
+	teaching_han_fei;
+=> nrel_promotes_virtue:
+	ren;
+	yi;
+	zhi_wisdom;
+=> nrel_spread_in:
+	state_zou;
+	state_qi;
+	empire_china;;
+
+school_xunzi
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_early_confucianism;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Сюнь-цзы]
+	(* <- lang_ru;; *);
+	[teaching of Xunzi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сюнь сюэ]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сюнь-цзы утверждал, что природа человека порочна (син э), а добро есть результат
+	воспитания, обучения и ритуала. Эта позиция сблизила конфуцианство с легизмом: его
+	ученики Хань Фэй и Ли Сы стали теоретиками и практиками циньского легизма.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_confucius;
+=> nrel_founded_by:
+	xunzi;
+=> nrel_includes_doctrine:
+	innate_evil_of_nature;
+	rectification_of_names;
+=> nrel_opposed_to:
+	school_mencius;
+=> nrel_promotes_virtue:
+	li_ritual;
+	yi;
+	zhi_wisdom;
+=> nrel_spread_in:
+	state_zhao;
+	state_qi;
+	state_chu;
+	empire_china;;
+
+school_dong_zhongshu
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_han_confucianism;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Дун Чжуншу]
+	(* <- lang_ru;; *);
+	[teaching of Dong Zhongshu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ханьское конфуцианство]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[В 134 г. до н. э. Дун Чжуншу подал императору У-ди три доклада («Тянь жэнь сань цэ»),
+	предложив почитать только «шесть искусств и учение Конфуция» и запретить остальные
+	школы. Это привело к учреждению императорской академии (124 г. до н. э.) и к превращению
+	конфуцианства в государственную идеологию.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_confucius;
+=> nrel_founded_by:
+	dong_zhongshu;
+=> nrel_includes_doctrine:
+	three_principles_and_five_constants;
+	interaction_of_heaven_and_human;
+	mandate_of_heaven;
+=> nrel_opposed_to:
+	teaching_han_fei;
+	teaching_mo_di;
+=> nrel_promotes_virtue:
+	ren;
+	yi;
+	li_ritual;
+	zhi_wisdom;
+	xin_trust;
+	zhong_loyalty;
+=> nrel_spread_in:
+	empire_china;;
+
+school_lian_xue
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+=> nrel_main_idtf:
+	[учение Чжоу Дуньи]
+	(* <- lang_ru;; *);
+	[teaching of Zhou Dunyi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[лянь сюэ]
+	(* <- lang_ru;; *);
+	[школа Ляньси]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжоу Дуньи считается родоначальником неоконфуцианства: в «Тайцзи ту шу» он вывел
+	космологию из схемы Великого предела, совместив её с конфуцианской этикой и заимствовав
+	форму у даосской космогонии.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_confucius;
+=> nrel_founded_by:
+	zhou_dunyi;
+=> nrel_includes_doctrine:
+	principle_is_fundamental;
+=> nrel_promotes_virtue:
+	cheng_sincerity;
+	ren;
+=> nrel_represented_by:
+	cheng_hao;
+	cheng_yi;
+=> nrel_spread_in:
+	empire_china;;
+
+school_cheng_brothers
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+=> nrel_main_idtf:
+	[школа братьев Чэн]
+	(* <- lang_ru;; *);
+	[school of the Cheng brothers]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ло сюэ]
+	(* <- lang_ru;; *);
+	[луосская школа]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чэн Хао и Чэн И, уроженцы Лояна, ввели понятие ли (принцип) в центр конфуцианской
+	метафизики и связали путь учения с «почтительной собранностью» (цзин) и «исследованием
+	вещей» (гэ у). Чэн И прямо формулировал тезис «принцип един, а его проявления различны».]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_lian_xue;
+=> nrel_founded_by:
+	cheng_hao;
+	cheng_yi;
+=> nrel_includes_doctrine:
+	principle_is_fundamental;
+	ge_wu;
+=> nrel_opposed_to:
+	teaching_chan;
+=> nrel_promotes_virtue:
+	ren;
+	jing_reverence;
+=> nrel_represented_by:
+	yang_shi;
+	zhu_xi;
+=> nrel_spread_in:
+	empire_china;;
+
+school_zhu_xi
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Чжу Си]
+	(* <- lang_ru;; *);
+	[teaching of Zhu Xi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ли сюэ]
+	(* <- lang_ru;; *);
+	[учение о принципе]
+	(* <- lang_ru;; *);
+	[школа Чэн - Чжу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Чжу Си синтезировал идеи Чжоу Дуньи, Чжан Цзая и братьев Чэн и закрепил канон
+	Четырёхкнижия собственными комментариями (1190 г.). С 1313 г. его толкования стали
+	обязательной программой имперских экзаменов и оставались официальной ортодоксией до
+	отмены кэцзюй в 1905 г.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_cheng_brothers;
+=> nrel_founded_by:
+	zhu_xi;
+=> nrel_includes_doctrine:
+	principle_is_fundamental;
+	ge_wu;
+	three_guides_eight_steps;
+	keju_selection;
+=> nrel_opposed_to:
+	school_lu_xiangshan;
+	teaching_chan;
+	school_wang_yangming;
+=> nrel_promotes_virtue:
+	ren;
+	li_ritual;
+	zhi_wisdom;
+	jing_reverence;
+=> nrel_represented_by:
+	zhu_xi;
+	lu_zuqian;
+=> nrel_spread_in:
+	empire_china;
+	joseon_korea;
+	tokugawa_japan;
+	dai_viet;;
+
+school_lu_xiangshan
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_lu_wang_school;
+=> nrel_main_idtf:
+	[учение Лу Цзююаня]
+	(* <- lang_ru;; *);
+	[teaching of Lu Jiuyuan]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[синь сюэ]
+	(* <- lang_ru;; *);
+	[учение о сердце]
+	(* <- lang_ru;; *);
+	[школа Сяншань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Лу Цзююань утверждал «сердце и есть принцип» (синь цзи ли) и считал излишним
+	многословное исследование вещей. В 1175 г. на встрече у озера Эху он спорил с Чжу Си о
+	методе учения; спор зафиксирован как событие, разделившее неоконфуцианство на две ветви.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_cheng_brothers;
+=> nrel_founded_by:
+	lu_jiuyuan;
+=> nrel_includes_doctrine:
+	heart_is_principle;
+=> nrel_opposed_to:
+	school_zhu_xi;
+=> nrel_promotes_virtue:
+	cheng_sincerity;
+	ren;
+=> nrel_represented_by:
+	lu_jiuyuan;
+	yang_jian;
+=> nrel_spread_in:
+	empire_china;;
+
+school_wang_yangming
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_lu_wang_school;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Ван Янмина]
+	(* <- lang_ru;; *);
+	[teaching of Wang Yangming]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[школа Янмин]
+	(* <- lang_ru;; *);
+	[минское учение о сердце]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ван Янмин сформулировал «единство знания и действия» (чжи син хэ и) и учение о
+	«врождённом знании» (лян чжи), которое нужно лишь «распространять» (чжи лян чжи). Он был
+	не только философом, но и полководцем, подавившим мятеж князя Чэнь Хао в 1519 г.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_lu_xiangshan;
+=> nrel_founded_by:
+	wang_yangming;
+=> nrel_includes_doctrine:
+	unity_of_knowledge_and_action;
+	innate_knowledge;
+	heart_is_principle;
+=> nrel_opposed_to:
+	school_zhu_xi;
+=> nrel_promotes_virtue:
+	cheng_sincerity;
+	zhi_wisdom;
+	yong_courage;
+=> nrel_represented_by:
+	wang_yangming;
+	wang_ji;
+=> nrel_spread_in:
+	empire_china;
+	tokugawa_japan;
+	joseon_korea;;
+
+school_yi_hwang
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+<- concept_korean_confucianism;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Ли Хвана]
+	(* <- lang_ru;; *);
+	[teaching of Yi Hwang]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[школа Тхвегэ]
+	(* <- lang_ru;; *);
+	[корейская школа принципа]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ли Хван (Тхвегэ) систематизировал чжусианство для Кореи и в споре о «четырёх началах и
+	семи чувствах» отстаивал приоритет принципа (ли): четыре начала происходят от ли, семь
+	чувств - от ци. Основал академию Тосан.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_zhu_xi;
+=> nrel_founded_by:
+	yi_hwang;
+=> nrel_includes_doctrine:
+	four_beginnings_issue_from_principle;
+	principle_is_fundamental;
+=> nrel_opposed_to:
+	school_yi_i;
+=> nrel_promotes_virtue:
+	jing_reverence;
+	ren;
+	gong_respect;
+=> nrel_spread_in:
+	joseon_korea;;
+
+school_yi_i
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+<- concept_korean_confucianism;
+=> nrel_main_idtf:
+	[учение Ли И]
+	(* <- lang_ru;; *);
+	[teaching of Yi I]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[школа Юльгок]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ли И (Юльгок) в том же споре отстаивал приоритет ци: проявления чувств, включая четыре
+	начала, исходят от материальной силы, а принцип лишь управляет ею. Он также предложил
+	реформу армии и налоговой системы Чосон.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_zhu_xi;
+=> nrel_founded_by:
+	yi_i;
+=> nrel_includes_doctrine:
+	four_beginnings_issue_from_material_force;
+	principle_is_fundamental;
+=> nrel_opposed_to:
+	school_yi_hwang;
+=> nrel_promotes_virtue:
+	ren;
+	yi;
+	jing_reverence;
+=> nrel_spread_in:
+	joseon_korea;;
+
+school_hayashi_razan
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_cheng_zhu_school;
+<- concept_japanese_confucianism;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Хаяси Радзана]
+	(* <- lang_ru;; *);
+	[teaching of Hayashi Razan]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[школа Хаяси]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Хаяси Радзан служил четырём сёгунам Токугава и сделал учение Чжу Си официальной
+	идеологией бакуфу. В 1630 г. он получил землю в Синобугаока для храма и школы, из
+	которых позднее выросла академия Сёхэйко (Юсима сэйдо).]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_zhu_xi;
+=> nrel_founded_by:
+	hayashi_razan;
+=> nrel_includes_doctrine:
+	principle_is_fundamental;
+	ge_wu;
+	three_principles_and_five_constants;
+=> nrel_opposed_to:
+	teaching_chan;
+	school_nakae_toju;
+=> nrel_promotes_virtue:
+	zhong_loyalty;
+	yi;
+	li_ritual;
+=> nrel_spread_in:
+	tokugawa_japan;;
+
+school_nakae_toju
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_neo_confucianism;
+<- concept_lu_wang_school;
+<- concept_japanese_confucianism;
+=> nrel_main_idtf:
+	[учение Накаэ Тодзю]
+	(* <- lang_ru;; *);
+	[teaching of Nakae Toju]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[японская школа сердца]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Накаэ Тодзю перенёс учение Ван Янмина в Японию, поставив в его центр сыновнюю
+	почтительность (сяо). Его последователи (Кумадзава Бандзан, Ямага Соко) связали школу
+	сердца с кодексом самурайской этики.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_wang_yangming;
+=> nrel_founded_by:
+	nakae_toju;
+=> nrel_includes_doctrine:
+	innate_knowledge;
+	unity_of_knowledge_and_action;
+=> nrel_opposed_to:
+	school_hayashi_razan;
+=> nrel_promotes_virtue:
+	xiao;
+	cheng_sincerity;
+=> nrel_spread_in:
+	tokugawa_japan;;
+
+school_kang_youwei
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_modern_confucianism;
+=> nrel_main_idtf:
+	[учение Кан Ювэя]
+	(* <- lang_ru;; *);
+	[teaching of Kang Youwei]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[реформаторское конфуцианство]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Кан Ювэй в конце XIX в. попытался превратить конфуцианство в реформистскую идеологию
+	(«Сто дней реформ» 1898 г.), трактуя Конфуция как реформатора и предлагая датировать
+	историю от его рождения, а учение - как «церковь Конфуция» (кун цзяо).]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_zhu_xi;
+=> nrel_founded_by:
+	kang_youwei;
+=> nrel_includes_doctrine:
+	great_unity;
+	dao_transmission;
+=> nrel_spread_in:
+	empire_china;;
+
+school_xiong_shili
+<- concept_confucianism;
+<- concept_confucian_school;
+<- concept_modern_confucianism;
+=> nrel_main_idtf:
+	[учение Сюн Шили]
+	(* <- lang_ru;; *);
+	[teaching of Xiong Shili]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[новое конфуцианство XX века]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сюн Шили («Новое учение о сознании», 1944) соединил неоконфуцианскую метафизику с
+	буддийской школой виджнянавады; его ученики Моу Цзунсань и Тан Цзюньи создали течение
+	«нового конфуцианства» XX в.]
+	(* <- lang_ru;; *);
+=> nrel_developed_from:
+	school_wang_yangming;
+=> nrel_founded_by:
+	xiong_shili;
+=> nrel_includes_doctrine:
+	heart_is_principle;
+	material_force_is_fundamental;
+=> nrel_opposed_to:
+	teaching_chan;
+=> nrel_spread_in:
+	empire_china;;
+

@@ -1,0 +1,41 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_historical_period - абсолютное понятие «исторический период».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_historical_period
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[исторический период]
+	(* <- lang_ru;; *);
+	[historical period]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	concept_chinese_dynasty;
+=> nrel_note:
+	[Второй домен отношения «жил в исторический период*». Для доимперского Китая используются
+	периоды Чуньцю и Чжаньго, для имперского - правящие династии.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (исторический период)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Исторический период - хронологически выделенный этап истории Восточной
+					Азии, в рамках которого развивалось конфуцианство.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_chinese_dynasty
+			};;
+	*);;
+

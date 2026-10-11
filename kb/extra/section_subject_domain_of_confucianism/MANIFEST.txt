@@ -1,0 +1,147 @@
+ПРЕДМЕТНАЯ ОБЛАСТЬ «КОНФУЦИАНСТВО»
+Лабораторная работа №1 дисциплины ТиИСПИС, вариант №130.
+Целевая система: NIKA (https://github.com/ostis-apps/nika), ветка tpis-2023, Linux.
+
+УСТАНОВКА
+  git clone -c core.longpaths=true -c core.autocrlf=true --recursive https://github.com/<ваш_аккаунт>/nika
+  cd nika && git checkout tpis-2023
+  cp -r section_subject_domain_of_confucianism kb/extra/
+  ./scripts/build_kb.sh          # или scripts/prepare_kb.sh / docker-compose
+  git add kb/extra/ && git commit -m "feat(kb): конфуцианство" && git push
+
+КОНТРОЛЬНЫЕ СЧЁТЧИКИ
+  абсолютных понятий (классов)      : 47
+  относительных понятий (nrel_)     : 19
+  всего понятий                     : 66  (требование: не менее 30)
+  экземпляров                       : 252  (не менее 1 на каждое понятие)
+  понятий без экземпляра            : 0
+  связок относительными понятиями   : 661
+  файлов .scs                       : 86
+
+СТРУКТУРА КАТАЛОГА
+  section_subject_domain_of_confucianism.scs  - раздел и схема предметной области:
+      rrel_maximum_studied_object_class, rrel_not_maximum_studied_object_class,
+      rrel_explored_relation, rrel_key_sc_element
+  extra.scs                       - якорь каталога и примечание о сборке
+  concepts/<concept_*>.scs        - по одному файлу на абсолютное понятие
+  relations/<nrel_*>.scs          - по одному файлу на относительное понятие
+  instances/<группа>.scs          - экземпляры, связанные отношениями
+
+АБСОЛЮТНЫЕ ПОНЯТИЯ (47)
+  concept_philosophical_teaching                       философское учение
+  concept_confucianism                                 конфуцианство
+  concept_confucian_school                             направление конфуцианства
+  concept_early_confucianism                           раннее конфуцианство
+  concept_han_confucianism                             ханьское конфуцианство
+  concept_neo_confucianism                             неоконфуцианство
+  concept_cheng_zhu_school                             школа Чэн - Чжу
+  concept_lu_wang_school                               школа Лу - Ван
+  concept_korean_confucianism                          корейское конфуцианство
+  concept_japanese_confucianism                        японское конфуцианство
+  concept_modern_confucianism                          новое конфуцианство
+  concept_daoism                                       даосизм
+  concept_buddhism                                     буддизм
+  concept_legalism                                     легизм
+  concept_mohism                                       моизм
+  concept_person_of_east_asian_tradition               деятель восточноазиатской традиции
+  concept_east_asian_philosopher                       восточноазиатский философ
+  concept_chinese_philosopher                          китайский философ
+  concept_person_of_confucian_tradition                деятель конфуцианской традиции
+  concept_confucian_thinker                            конфуцианский мыслитель
+  concept_confucian_disciple                           ученик конфуцианского мыслителя
+  concept_confucian_official                           конфуцианский чиновник
+  concept_confucian_person_type                        тип личности в конфуцианстве
+  concept_confucian_text                               конфуцианский текст
+  concept_confucian_canonical_book                     конфуцианский канон
+  concept_confucian_commentary                         комментарий к конфуцианскому канону
+  concept_confucian_recorded_saying                    запись бесед и суждений
+  concept_confucian_treatise                           конфуцианский трактат
+  concept_confucian_canon                              каноническое собрание
+  concept_confucian_concept                            понятие конфуцианской традиции
+  concept_confucian_virtue                             конфуцианская добродетель
+  concept_confucian_cardinal_virtue                    постоянство (у чан)
+  concept_confucian_category                           конфуцианская философская категория
+  concept_confucian_cosmological_category              космологическая категория конфуцианства
+  concept_confucian_anthropological_category           антропологическая категория конфуцианства
+  concept_confucian_principle_doctrine                 положение конфуцианского учения
+  concept_confucian_self_cultivation_method            метод самосовершенствования
+  concept_confucian_ritual                             конфуцианский ритуал
+  concept_confucian_social_relation                    конфуцианское социальное отношение
+  concept_chinese_term                                 китайский термин
+  concept_confucian_institution                        конфуцианский институт
+  concept_imperial_examination                         имперский экзамен
+  concept_confucian_educational_institution            конфуцианское учебное заведение
+  concept_confucian_temple                             храм Конфуция
+  concept_historical_period                            исторический период
+  concept_chinese_dynasty                              китайская династия
+  concept_historical_state                             историческое государство
+
+ОТНОСИТЕЛЬНЫЕ ПОНЯТИЯ (19)
+  nrel_founded_by                    основано*                                      concept_confucian_school -> concept_confucian_thinker
+  nrel_developed_from                является развитием*                            concept_confucian_school -> concept_confucian_school
+  nrel_represented_by                представлено последователем*                   concept_confucian_school -> concept_person_of_confucian_tradition
+  nrel_authored                      автор*                                         concept_confucian_text -> concept_confucian_thinker
+  nrel_part_of_canon                 входит в состав канонического собрания*        concept_confucian_text -> concept_confucian_canon
+  nrel_commented_by                  прокомментировано*                             concept_confucian_text -> concept_confucian_thinker
+  nrel_lived_in_period               жил в исторический период*                     concept_person_of_east_asian_tradition -> concept_historical_period
+  nrel_associated_with_state         связан с государством*                         concept_person_of_east_asian_tradition -> concept_historical_state
+  nrel_spread_in                     распространено*                                concept_philosophical_teaching -> concept_historical_state
+  nrel_teacher_of                    является учителем*                             concept_person_of_east_asian_tradition -> concept_person_of_east_asian_tradition
+  nrel_influenced                    оказал влияние на*                             concept_east_asian_philosopher -> concept_east_asian_philosopher
+  nrel_opposed_to                    противопоставлено*                             concept_philosophical_teaching -> concept_philosophical_teaching
+  nrel_introduces_category           вводит понятие*                                concept_confucian_text -> concept_confucian_concept
+  nrel_promotes_virtue               утверждает добродетель*                        concept_confucian_school -> concept_confucian_virtue
+  nrel_includes_doctrine             включает положение учения*                     concept_confucian_school -> concept_confucian_principle_doctrine
+  nrel_used_in_examination           используется на имперском экзамене*            concept_confucian_text -> concept_imperial_examination
+  nrel_studied_in                    изучается в учебном заведении*                 concept_confucian_text -> concept_confucian_educational_institution
+  nrel_located_in                    расположено*                                   concept_confucian_institution -> concept_historical_state
+  nrel_chinese_term                  китайский термин*                              concept_confucian_concept -> concept_chinese_term
+
+ЭКЗЕМПЛЯРЫ ПО ФАЙЛАМ
+  instances/confucian_schools.scs             15  Направления (школы) конфуцианства - экземпляры максимального класса
+  instances/other_teachings.scs                6  Смежные учения: даосизм, буддизм, легизм, моизм
+  instances/thinkers_early.scs                16  Мыслители раннего конфуцианства
+  instances/thinkers_han_tang.scs              3  Мыслители ханьского и танского этапов
+  instances/thinkers_neo_confucian.scs        15  Мыслители сунско-минского неоконфуцианства
+  instances/thinkers_korea_japan.scs           6  Мыслители Кореи, Японии и нового времени
+  instances/officials.scs                      4  Конфуцианские чиновники
+  instances/person_types.scs                   4  Типы личности в конфуцианстве
+  instances/texts_canonical.scs               12  Канонические тексты
+  instances/texts_treatises.scs               14  Трактаты, записи бесед и комментарии
+  instances/canons.scs                         3  Канонические собрания
+  instances/virtues.scs                       16  Конфуцианские добродетели
+  instances/categories.scs                    11  Философские категории конфуцианства
+  instances/doctrines_methods.scs             24  Положения учения и методы самосовершенствования
+  instances/rituals_social_relations.scs      13  Ритуалы и социальные отношения
+  instances/chinese_terms.scs                 49  Китайские термины
+  instances/institutions.scs                  15  Экзамены, учебные заведения и храмы
+  instances/history.scs                       26  Исторические периоды, династии и государства
+
+ИСПОЛЬЗОВАННЫЕ ОТНОШЕНИЯ ЯДРА OSTIS (не переопределяются)
+  nrel_inclusion, nrel_subdividing, nrel_main_idtf, nrel_idtf, nrel_note,
+  nrel_first_domain, nrel_second_domain, nrel_definitional_domain,
+  nrel_combination, nrel_sc_text_translation, nrel_using_constants,
+  rrel_key_sc_element, rrel_example, rrel_maximum_studied_object_class,
+  rrel_not_maximum_studied_object_class, rrel_explored_relation;
+  классы: class, relation, binary_relation, oriented_relation,
+  antireflexive_relation, asymmetric_relation, antitransitive_relation,
+  symmetric_relation, definition, subject_domain, atomic_section,
+  sc_node_class, sc_node_norole_relation, sc_node_struct, sc_node_tuple,
+  lang_ru, lang_en, concept_wit_entity.
+
+ОТКРЫТЫЕ ИСТОЧНИКИ ФАКТОГРАФИИ
+  Wikipedia / Википедия: Confucius, Mencius, Xunzi, Dong Zhongshu, Han Yu,
+  Zhou Dunyi, Zhang Zai, Cheng Hao, Cheng Yi, Zhu Xi, Lu Jiuyuan,
+  Wang Yangming, Yi Hwang, Yi I, Hayashi Razan, Nakae Toju, Kang Youwei,
+  Analects, Mencius (book), Great Learning, Doctrine of the Mean,
+  Four Books, Five Classics, Thirteen Classics, Classic of Filial Piety,
+  Neo-Confucianism, Confucianism, Imperial examination, Guozijian,
+  Yuelu Academy, White Deer Grotto Academy, Sungkyunkwan, Yushima Seido,
+  Temple of Confucius (Qufu), Ren (Confucianism), Li (Confucianism),
+  Xiao (filial piety), Junzi, Three guides and Five constants.
+  Определения понятий SC-кода - по методичке ТиИСПИС и Стандарту Технологии OSTIS.
+
+ПРИМЕЧАНИЕ. Численные датировки, приписываемое авторство и перечень
+учеников приводятся по энциклопедической традиции; спорные случаи
+(авторство «Чуньцю», «Да сюэ», «Чжун юн», «Сяо цзин») помечены в
+примечаниях как традиционные.

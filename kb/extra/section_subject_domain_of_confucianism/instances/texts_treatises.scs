@@ -1,0 +1,372 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Трактаты, записи бесед и комментарии.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+xunzi_book
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Сюнь-цзы»]
+	(* <- lang_ru;; *);
+	[Xunzi (book)]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[32 главы, из которых первые (главным образом «О порочности природы человека»)
+	принадлежат самому Сюнь-цзы. Глава «Чжэн мин» - классическое изложение тезиса об
+	исправлении имён.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	xunzi;
+=> nrel_introduces_category:
+	innate_evil_of_nature;
+	li_ritual;
+	rectification_of_names;
+	tian_heaven;
+=> nrel_studied_in:
+	guozijian;;
+
+chunqiu_fanlu
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Чуньцю фаньлу»]
+	(* <- lang_ru;; *);
+	[Chunqiu Fanlu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Обильные росы «Чуньцю»]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[82 главы толкования летописи «Чуньцю». Здесь изложены «взаимодействие Неба и человека»
+	(тянь жэнь гань ин), «три устоя и пять постоянств» и теория предостерегающих знамений
+	Неба.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	dong_zhongshu;
+=> nrel_introduces_category:
+	three_principles_and_five_constants;
+	interaction_of_heaven_and_human;
+	mandate_of_heaven;
+	tian_heaven;
+=> nrel_studied_in:
+	guozijian;;
+
+yuan_dao
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Юань дао»]
+	(* <- lang_ru;; *);
+	[Yuan Dao]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Исследование о Дао]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Трактат Хань Юя (819 г.), в котором дао понимается как конфуцианская, а не даосская и не
+	буддийская категория, и впервые подробно изложена линия «передачи дао» (дао тун).]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	han_yu;
+=> nrel_introduces_category:
+	dao_transmission;
+	dao;
+	ren;
+	yi;;
+
+taiji_tushuo
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Тайцзи ту шу»]
+	(* <- lang_ru;; *);
+	[Taiji Tushuo]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Пояснение к схеме Великого предела]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Краткий текст Чжоу Дуньи (1063 г.) к космологической диаграмме: «Беспредельное и вместе
+	Великий предел... движение рождает ян, покой рождает инь». Стал отправной точкой всей
+	неоконфуцианской космологии; Чжу Си написал к нему комментарий «Тайцзи ту шу цзе».]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zhou_dunyi;
+=> nrel_commented_by:
+	zhu_xi;
+=> nrel_introduces_category:
+	taiji;
+	wu_ji;
+	yin_yang;
+	li_principle;
+	qi_material_force;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;;
+
+zheng_meng
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Чжэн мэн»]
+	(* <- lang_ru;; *);
+	[Zheng Meng]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Исправление юношеской неразумности]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Главный труд Чжан Цзая (1076 г.), излагающий космологию ци: мир есть единая материальная
+	сила в её сгущениях и рассеяниях, а индивидуальная смерть - возвращение ци в общее.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zhang_zai;
+=> nrel_introduces_category:
+	qi_material_force;
+	taiji;
+	xin_heart_mind;
+	human_nature_xing;
+=> nrel_studied_in:
+	guozijian;;
+
+ximing
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Си мин»]
+	(* <- lang_ru;; *);
+	[Western Inscription]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Западная надпись]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Короткий текст Чжан Цзая, первоначально надпись на западной стене его кабинета.
+	Провозглашает космическое родство: Небо - отец, земля - мать, все люди - братья, все
+	вещи - спутники; слабость и страдание ближнего - повод для сострадания.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zhang_zai;
+=> nrel_introduces_category:
+	qi_material_force;
+	tian_heaven;
+	ren;
+	de_virtue;
+=> nrel_studied_in:
+	yuelu_academy;;
+
+cheng_yi_commentary_on_changes
+<- concept_confucian_text;
+<- concept_confucian_commentary;
+=> nrel_main_idtf:
+	[Комментарий Чэн И к «И цзину»]
+	(* <- lang_ru;; *);
+	[Cheng Yi commentary on the Book of Changes]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[И чжуань]
+	(* <- lang_ru;; *);
+	[Ичуань и чжуань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Главный труд Чэн И, читающий «И цзин» не как гадательную, а как философскую книгу о
+	принципе (ли) и его проявлениях.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	cheng_yi;
+=> nrel_introduces_category:
+	li_principle;
+	yin_yang;
+	dao;
+=> nrel_studied_in:
+	guozijian;;
+
+four_books_with_commentaries
+<- concept_confucian_text;
+<- concept_confucian_commentary;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[«Четырёхкнижие с комментариями и толкованиями»]
+	(* <- lang_ru;; *);
+	[Four Books with Commentaries]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сы шу чжан цзюй цзи чжу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Завершено Чжу Си в 1190 г. и напечатано в Цзянчжоу. Именно этот корпус сделал
+	Четырёхкнижие главным экзаменационным каноном с 1313 г. и определил ортодоксальное
+	прочтение конфуцианства на семь столетий.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zhu_xi;
+=> nrel_introduces_category:
+	li_principle;
+	qi_material_force;
+	ge_wu;
+	xin_heart_mind;
+	human_nature_xing;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;
+	bailudong_academy;
+	sungkyunkwan;
+	yushima_seido;
+=> nrel_used_in_examination:
+	examination_jinshi;
+	palace_exam;
+	provincial_exam;
+	metropolitan_exam;;
+
+jinsilu
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Цзинь сы лу»]
+	(* <- lang_ru;; *);
+	[Reflections on Things at Hand]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Размышления о близком]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Антология, составленная Чжу Си и Люй Цзуцянем в 1175 г. из высказываний Чжоу Дуньи, Чжан
+	Цзая и братьев Чэн: 14 разделов, около 650 фрагментов. Служила «входным» текстом
+	неоконфуцианства.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zhu_xi;
+	lu_zuqian;
+=> nrel_introduces_category:
+	li_principle;
+	qi_material_force;
+	jing_reverence;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;;
+
+chuanxilu
+<- concept_confucian_text;
+<- concept_confucian_recorded_saying;
+=> nrel_main_idtf:
+	[«Чуань си лу»]
+	(* <- lang_ru;; *);
+	[Instructions for Practical Living]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Передача привычного]
+	(* <- lang_ru;; *);
+	[Записи бесед Ван Янмина]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Записи бесед и писем Ван Янмина, изданные учениками в трёх частях (1518, 1556). Здесь
+	изложены «единство знания и действия» и учение о врождённом знании (лян чжи).]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	wang_yangming;
+=> nrel_introduces_category:
+	unity_of_knowledge_and_action;
+	innate_knowledge;
+	heart_is_principle;
+	xin_heart_mind;
+=> nrel_studied_in:
+	yushima_seido;;
+
+zheng_xuan_commentary_on_rites
+<- concept_confucian_text;
+<- concept_confucian_commentary;
+=> nrel_main_idtf:
+	[Комментарии Чжэн Сюаня к ритуальным канонам]
+	(* <- lang_ru;; *);
+	[Zheng Xuan commentary on the rites]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сань ли чжу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Комментарии Чжэн Сюаня к «Чжоу ли», «И ли» и «Ли цзи» объединили конкурирующие
+	текстологические школы эпохи Хань и надолго стали нормой изучения ритуала.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zheng_xuan;
+=> nrel_introduces_category:
+	li_ritual;
+	ritual_sacrifice;
+	ritual_ancestor_veneration;
+=> nrel_studied_in:
+	guozijian;;
+
+seonghak_sipto
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Сонхак сипто»]
+	(* <- lang_ru;; *);
+	[Seonghak Sipdo]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Десять диаграмм о святом учении]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сочинение Ли Хвана (1568 г.), поднесённое королю Сонджо: десять диаграмм с пояснениями,
+	систематизирующих учение Чжу Си в наглядной форме.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	yi_hwang;
+=> nrel_introduces_category:
+	li_principle;
+	qi_material_force;
+	jing_reverence;
+	four_beginnings_issue_from_principle;
+=> nrel_studied_in:
+	sungkyunkwan;;
+
+seonghak_jibyo
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Сонхак чипё»]
+	(* <- lang_ru;; *);
+	[Seonghak Jibyo]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Собрание существенного о святом учении]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сочинение Ли И (1575 г.) для короля Сонджо: антология конфуцианских наставлений
+	правителю с собственными комментариями.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	yi_i;
+=> nrel_introduces_category:
+	li_principle;
+	qi_material_force;
+	four_beginnings_issue_from_material_force;
+=> nrel_studied_in:
+	sungkyunkwan;;
+
+da_tong_shu
+<- concept_confucian_text;
+<- concept_confucian_treatise;
+=> nrel_main_idtf:
+	[«Да тун шу»]
+	(* <- lang_ru;; *);
+	[Book of Great Unity]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Книга о великом единстве]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Утопическое сочинение Кан Ювэя, завершённое к 1902 г. и изданное в 1935 г. Опирается на
+	образ «великого единства» из канона «Ли цзи», но дополняет его идеями равенства полов,
+	отмены государств и всеобщего общественного воспитания.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	kang_youwei;
+=> nrel_introduces_category:
+	great_unity;
+	ren;
+	de_virtue;;
+

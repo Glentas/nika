@@ -1,0 +1,254 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Философские категории конфуцианства.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+li_principle
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[ли (принцип)]
+	(* <- lang_ru;; *);
+	[li (principle)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[принцип]
+	(* <- lang_ru;; *);
+	[закономерность]
+	(* <- lang_ru;; *);
+	[ли сюэ]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Центральная категория неоконфуцианства: единый принцип, по-разному проявляющийся во всех
+	вещах («принцип един, проявления различны»). Чжу Си: у каждой вещи своё ли, но все ли
+	образуют единое целое.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_principle;;
+
+qi_material_force
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[ци]
+	(* <- lang_ru;; *);
+	[qi (material force)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[материальная сила]
+	(* <- lang_ru;; *);
+	[пневма]
+	(* <- lang_ru;; *);
+	[энергия]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Материально-энергетическое начало, из сгущений и рассеяний которого состоят вещи. У Чжу
+	Си ли и ци неразрывны, но ли первично; у Чжан Цзая и Ван Фучжи первично ци.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_qi;;
+
+taiji
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[тайцзи]
+	(* <- lang_ru;; *);
+	[taiji (Supreme Ultimate)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Великий предел]
+	(* <- lang_ru;; *);
+	[Великий полюс]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[В «Тайцзи ту шу» - предельное основание порождения инь и ян. Чжу Си отождествил тайцзи с
+	совокупностью всех ли: «тайцзи есть просто принцип Неба и земли и всех вещей».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_taiji;;
+
+wu_ji
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[у цзи]
+	(* <- lang_ru;; *);
+	[wuji (the Ultimate of Nonbeing)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[беспредельное]
+	(* <- lang_ru;; *);
+	[не имеющее предела]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Формула Чжоу Дуньи «у цзи эр тайцзи» («беспредельное и вместе Великий предел») вызвала
+	спор: Лу Цзююань считал даосское «у цзи» чуждым конфуцианству, Чжу Си защищал её как
+	указание на бесформенность принципа.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_wu_ji;;
+
+dao
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[дао]
+	(* <- lang_ru;; *);
+	[dao (the Way)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[путь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[У Конфуция - прежде всего путь человеческого поведения и правления: «Утром услышал дао -
+	вечером можно умереть» (Лунь юй, 4.8). В даосизме то же слово означает всеобщий
+	безличный закон, что и стало предметом полемики.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_dao;;
+
+yin_yang
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[инь и ян]
+	(* <- lang_ru;; *);
+	[yin and yang]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[инь-ян]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Пара взаимопревращающихся начал, порождаемых движением и покоем тайцзи. Общая для
+	конфуцианства и даосизма космологическая схема, закрепившаяся в «И цзине».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_yin_yang;;
+
+tian_heaven
+<- concept_confucian_category;
+<- concept_confucian_cosmological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[тянь]
+	(* <- lang_ru;; *);
+	[tian (Heaven)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Небо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Небо у Конфуция - одновременно источник мандата правителю, высшая моральная инстанция и
+	порядок природы. «Небо не говорит, но четыре времени года идут своим чередом» (Лунь юй,
+	17.19). Дун Чжуншу сделал Небо активным участником политики, посылающим знамения.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_tian;;
+
+xin_heart_mind
+<- concept_confucian_category;
+<- concept_confucian_anthropological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[синь (сердце-сознание)]
+	(* <- lang_ru;; *);
+	[xin (heart-mind)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сердце]
+	(* <- lang_ru;; *);
+	[сознание]
+	(* <- lang_ru;; *);
+	[сердце-ум]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Орган мышления и источник нравственности одновременно. Мэн-цзы: «сердце - это орган
+	мышления; если мыслишь - обретёшь, если не мыслишь - не обретёшь». В школе Лу - Ван синь
+	само есть принцип, тогда как у Чжу Си синь - место соединения ли и ци.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xin_heart;;
+
+human_nature_xing
+<- concept_confucian_category;
+<- concept_confucian_anthropological_category;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[син (природа человека)]
+	(* <- lang_ru;; *);
+	[xing (human nature)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[природа человека]
+	(* <- lang_ru;; *);
+	[естество]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Главный предмет спора внутри конфуцианства: Мэн-цзы - природа добра (син шань), Сюнь-цзы
+	- природа порочна (син э). Чжу Си различал «природу принципа» (изначально добрую) и
+	«природу ци» (искажённую составом ци).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xing;;
+
+feelings_qing
+<- concept_confucian_category;
+<- concept_confucian_anthropological_category;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[цин (чувства)]
+	(* <- lang_ru;; *);
+	[qing (feelings)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чувства]
+	(* <- lang_ru;; *);
+	[эмоции]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Проявления природы: «семь чувств» (ци цин) - радость, гнев, печаль, страх, любовь,
+	ненависть, вожделение. В корейском неоконфуцианстве семь чувств сопоставлялись с
+	«четырьмя началами» Мэн-цзы, что породило спор Ли Хвана и Ли И.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_qing;;
+
+ming_fate
+<- concept_confucian_category;
+<- concept_confucian_anthropological_category;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[мин]
+	(* <- lang_ru;; *);
+	[ming (fate, mandate)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[судьба]
+	(* <- lang_ru;; *);
+	[предопределение]
+	(* <- lang_ru;; *);
+	[жизненный предел]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[То, что не зависит от человека: срок жизни, бедность, неудача. «Не зная мин, нельзя
+	стать благородным мужем» (Лунь юй, 20.3). Различение того, что зависит от нас
+	(добродетель), и мин - основа конфуцианского стоицизма.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_ming;;
+

@@ -1,0 +1,57 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_lived_in_period - относительное понятие «жил в исторический период*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_lived_in_period
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[жил в исторический период*]
+	(* <- lang_ru;; *);
+	[lived in period*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Для мыслителей, чья жизнь пришлась на смену династий, задаётся несколько значений (Чжу
+	Си - Сун, Хай Жуй - Мин).]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_person_of_east_asian_tradition;
+=> nrel_second_domain: concept_historical_period;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_person_of_east_asian_tradition;
+				concept_historical_period
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (жил в исторический период*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Жил в исторический период* - бинарное ориентированное отношение,
+					связывающее деятеля конфуцианской традиции и исторический период, на
+					который приходится его жизнь.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_person_of_east_asian_tradition;
+				concept_historical_period
+			};;
+	*);;
+

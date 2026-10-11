@@ -1,0 +1,55 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_commented_by - относительное понятие «прокомментировано*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_commented_by
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[прокомментировано*]
+	(* <- lang_ru;; *);
+	[commented by*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Комментаторская линия - основной канал передачи учения: «Лунь юй» комментировали Хэ Янь,
+	Хуан Кань, Чжэн Сюань, Чжу Си.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_confucian_text;
+=> nrel_second_domain: concept_confucian_thinker;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_confucian_text;
+				concept_confucian_thinker
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (прокомментировано*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Прокомментировано* - бинарное ориентированное отношение, связывающее
+					конфуцианский текст и мыслителя, создавшего его толкование.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_text;
+				concept_confucian_thinker
+			};;
+	*);;
+

@@ -1,0 +1,246 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Ритуалы и социальные отношения.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+ritual_capping
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[обряд возложения шапки]
+	(* <- lang_ru;; *);
+	[capping ceremony]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[гуань ли]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Церемония совершеннолетия юноши (обычно в 20 лет), описана в каноне «И ли». Юноше трижды
+	меняли головной убор и давали «взрослое» второе имя (цзы), после чего он признавался
+	полноправным членом общины.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+ritual_marriage
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[свадебный обряд]
+	(* <- lang_ru;; *);
+	[marriage ritual]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[хунь ли]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Свадьба из шести этапов (шесть обрядов): сватовство, запрос имени и гадание о
+	совместимости, сообщение о результатах, предложение подарков, выбор дня, встреча
+	невесты.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+ritual_funeral
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[похоронный обряд]
+	(* <- lang_ru;; *);
+	[funeral ritual]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сан ли]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Трёхлетний траур по родителям (фактически 25-27 месяцев) был обязателен для чиновника:
+	он оставлял службу и жил у могилы. Мо Ди критиковал обычай как разорительный; Конфуций
+	оправдывал его тем, что три года ребёнок носим родителями на руках.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+ritual_sacrifice
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[жертвоприношение]
+	(* <- lang_ru;; *);
+	[sacrificial ritual]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзи ли]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Жертва предкам и духам. «Участвуй в жертвоприношении так, будто дух присутствует» (Лунь
+	юй, 3.12): важнее внутреннее почтение, чем сам обряд.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+ritual_ancestor_veneration
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[почитание предков]
+	(* <- lang_ru;; *);
+	[ancestor veneration]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзу сянь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Практика регулярных жертв в семейном храме предков (цзя мяо), основа сяо после смерти
+	родителей и одновременно способ утверждения родовой иерархии. Распространилась в Корее,
+	Японии и Вьетнаме вместе с конфуцианством.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xiao;;
+
+ritual_sacrifice_to_heaven
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[жертва Небу]
+	(* <- lang_ru;; *);
+	[sacrifice to Heaven]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзяо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ежегодная церемония в день зимнего солнцестояния, совершаемая лично императором как
+	Сыном Неба. Алтарь Неба (Тяньтань) в Пекине построен в 1420 г. именно для этого обряда.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_tian;;
+
+ritual_archery
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[церемониальная стрельба]
+	(* <- lang_ru;; *);
+	[ceremonial archery]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сян шэ]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Состязание в стрельбе, соединённое с ритуалом и музыкой: оценивались не только меткость,
+	но и осанка, соответствие музыке и учтивость. «Благородный муж состязается, но не
+	враждует» (Лунь юй, 3.7).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+ritual_confucius_worship
+<- concept_confucian_ritual;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[церемония поклонения Конфуцию]
+	(* <- lang_ru;; *);
+	[ceremony of worship of Confucius]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзи кун]
+	(* <- lang_ru;; *);
+	[ши дянь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Государственная церемония в храмах Конфуция, проводившаяся весной и осенью. В Китае
+	возрождена как культурный праздник; на Тайване приурочена к 28 сентября - дню рождения
+	Конфуция по новому стилю.]
+	(* <- lang_ru;; *);;
+
+relation_ruler_subject
+<- concept_confucian_social_relation;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[государь и подданный]
+	(* <- lang_ru;; *);
+	[ruler and subject]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзюнь чэнь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первое из пяти человеческих отношений (у лунь) и первый из «трёх устоев». Добродетель
+	государя - праведность и милость, добродетель подданного - чжун (преданность).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_wu_lun;;
+
+relation_father_son
+<- concept_confucian_social_relation;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[отец и сын]
+	(* <- lang_ru;; *);
+	[father and son]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[фу цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Второе из пяти отношений, ядро семейной этики; добродетель сына - сяо, добродетель отца
+	- милосердие и наставление.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xiao;;
+
+relation_husband_wife
+<- concept_confucian_social_relation;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[муж и жена]
+	(* <- lang_ru;; *);
+	[husband and wife]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[фу фу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Третье из пяти отношений; в «Ли цзи» описывается как различение внешних и внутренних
+	обязанностей, в имперский период - как подчинение жены мужу.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_wu_lun;;
+
+relation_elder_younger
+<- concept_confucian_social_relation;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[старший и младший]
+	(* <- lang_ru;; *);
+	[elder and younger]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чжан ю]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Четвёртое из пяти отношений, распространяющее братскую иерархию на всё общество;
+	добродетель младшего - ди (почтение к старшим).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_ti;;
+
+relation_friends
+<- concept_confucian_social_relation;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[друзья]
+	(* <- lang_ru;; *);
+	[friends]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[пэн ю]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Пятое и единственное из пяти отношений, не основанное на иерархии; его добродетель -
+	синь (благонадёжность). «Не имей друзей, которые хуже тебя» (Лунь юй, 1.8).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xin_trust;;
+

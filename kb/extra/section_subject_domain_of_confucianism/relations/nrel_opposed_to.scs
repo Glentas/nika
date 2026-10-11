@@ -1,0 +1,58 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_opposed_to - относительное понятие «противопоставлено*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_opposed_to
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- symmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[противопоставлено*]
+	(* <- lang_ru;; *);
+	[opposed to*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Единственное симметричное отношение предметной области: если учение А противопоставлено
+	учению Б, то и Б противопоставлено А. Асимметричность (asymmetric_relation) для него не
+	объявляется.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_philosophical_teaching;
+=> nrel_second_domain: concept_philosophical_teaching;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_philosophical_teaching;
+				concept_philosophical_teaching
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (противопоставлено*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Противопоставлено* - бинарное ориентированное симметричное отношение,
+					связывающее два философских учения, выступающие друг для друга предметом
+					полемики.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_philosophical_teaching;
+				concept_philosophical_teaching
+			};;
+	*);;
+

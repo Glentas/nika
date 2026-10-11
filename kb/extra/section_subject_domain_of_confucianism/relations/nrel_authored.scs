@@ -1,0 +1,60 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_authored - относительное понятие «автор*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_authored
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[автор*]
+	(* <- lang_ru;; *);
+	[author*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Связка фиксируется на стороне текста, как это сделано для отношения nrel_authors в
+	базовой базе знаний IMS. Авторство ряда канонов традиционно приписывается Конфуцию
+	(редакция «Чуньцю»), хотя современная наука рассматривает их как составные памятники;
+	для «Лунь юй» автор не задан, поскольку текст составлен учениками и потому связан
+	отношением «представлено последователем*».]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_confucian_text;
+=> nrel_second_domain: concept_confucian_thinker;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_confucian_text;
+				concept_confucian_thinker
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (автор*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Автор* - бинарное ориентированное отношение, связывающее конфуцианский
+					текст и конфуцианского мыслителя, которому традиция приписывает создание
+					этого текста.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_text;
+				concept_confucian_thinker
+			};;
+	*);;
+

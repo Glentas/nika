@@ -1,0 +1,433 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Исторические периоды, династии и государства.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+period_spring_autumn
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[период Чуньцю]
+	(* <- lang_ru;; *);
+	[Spring and Autumn period]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Вёсны и Осени]
+	(* <- lang_ru;; *);
+	[770-476 гг. до н. э.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первая половина эпохи Восточная Чжоу (770-476 до н. э.), время распада единой влади Чжоу
+	на удельные царства и появления «ста школ» мысли. В этот период жил Конфуций.]
+	(* <- lang_ru;; *);;
+
+period_warring_states
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[период Чжаньго]
+	(* <- lang_ru;; *);
+	[Warring States period]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Воюющие царства]
+	(* <- lang_ru;; *);
+	[475-221 гг. до н. э.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Время интенсивной философской полемики: действовали конфуцианцы, моисты, даосы, легисты,
+	«школа имён», «школа инь-ян». Завершился объединением Китая царством Цинь в 221 г. до н.
+	э.]
+	(* <- lang_ru;; *);;
+
+period_joseon
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[период Чосон]
+	(* <- lang_ru;; *);
+	[Joseon period]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[династия Чосон]
+	(* <- lang_ru;; *);
+	[1392-1897 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Корейское государство Чосон (1392-1897), основанное Ли Сонгеем, провозгласило
+	неоконфуцианство Чжу Си государственной идеологией вместо буддизма.]
+	(* <- lang_ru;; *);;
+
+period_edo
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[период Эдо]
+	(* <- lang_ru;; *);
+	[Edo period]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[период Токугава]
+	(* <- lang_ru;; *);
+	[1603-1868 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Период сёгуната Токугава, когда конфуцианство стало официальной идеологией; в 1790 г.
+	указом Кансэй преподавание иных школ было ограничено.]
+	(* <- lang_ru;; *);;
+
+period_modern_east_asia
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[новое и новейшее время в Восточной Азии]
+	(* <- lang_ru;; *);
+	[modern East Asia]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[XIX-XXI вв.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Период от Опиумных войн до наших дней: отмена кэцзюй (1905), движение «4 мая» (1919) с
+	лозунгом «Долой лавку Конфуция!», критика конфуцианства в 1966-1976 гг. и его
+	возрождение с конца XX в.]
+	(* <- lang_ru;; *);;
+
+dynasty_zhou
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Чжоу]
+	(* <- lang_ru;; *);
+	[Zhou dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжоу]
+	(* <- lang_ru;; *);
+	[1046-256 до н. э.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Древняя династия, при которой сложился ритуальный порядок, канонические тексты и сама
+	идея мандата Неба. Делится на Западную Чжоу (до 771 до н. э.) и Восточную Чжоу (770-256
+	до н. э.).]
+	(* <- lang_ru;; *);;
+
+dynasty_qin
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Цинь]
+	(* <- lang_ru;; *);
+	[Qin dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Цинь]
+	(* <- lang_ru;; *);
+	[221-206 до н. э.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первая империя, основанная на легизме; в 213 г. до н. э. сожгла конфуцианские каноны.
+	Просуществовала 15 лет и была сменена Хань, при которой конфуцианство было
+	реабилитировано.]
+	(* <- lang_ru;; *);;
+
+dynasty_han
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[династия Хань]
+	(* <- lang_ru;; *);
+	[Han dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Хань]
+	(* <- lang_ru;; *);
+	[206 до н. э. - 220 н. э.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[При императоре У-ди (141-87 до н. э.) конфуцианство стало государственной идеологией; в
+	124 г. до н. э. учреждена императорская академия с 50 студентами, к концу эпохи - более
+	30 тысяч.]
+	(* <- lang_ru;; *);;
+
+dynasty_tang
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Тан]
+	(* <- lang_ru;; *);
+	[Tang dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Тан]
+	(* <- lang_ru;; *);
+	[618-907 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Эпоха расцвета буддизма и поэзии. В 605 г. при Суй, а окончательно при Тан оформилась
+	экзаменационная система кэцзюй. Конфуцианство в это время сосуществовало с буддизмом и
+	даосизмом.]
+	(* <- lang_ru;; *);;
+
+dynasty_song
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[династия Сун]
+	(* <- lang_ru;; *);
+	[Song dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сун]
+	(* <- lang_ru;; *);
+	[960-1279 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Эпоха формирования неоконфуцианства: Чжоу Дуньи, Чжан Цзай, братья Чэн, Чжу Си, Лу
+	Цзююань. В 1190 г. Чжу Си издал Четырёхкнижие.]
+	(* <- lang_ru;; *);;
+
+dynasty_yuan
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Юань]
+	(* <- lang_ru;; *);
+	[Yuan dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Юань]
+	(* <- lang_ru;; *);
+	[1271-1368 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Монгольская династия; в 1313 г. император Аюрбарибада возобновил кэцзюй с программой на
+	основе Четырёхкнижия в толковании Чжу Си.]
+	(* <- lang_ru;; *);;
+
+dynasty_ming
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Мин]
+	(* <- lang_ru;; *);
+	[Ming dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Мин]
+	(* <- lang_ru;; *);
+	[1368-1644 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Эпоха расцвета школы Ван Янмина и одновременно ужесточения экзаменационной формы
+	«восьмичленного сочинения» (ба гу вэнь), обязательной с 1487 г.]
+	(* <- lang_ru;; *);;
+
+dynasty_qing
+<- concept_chinese_dynasty;
+<- concept_historical_period;
+=> nrel_main_idtf:
+	[династия Цин]
+	(* <- lang_ru;; *);
+	[Qing dynasty]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Цин]
+	(* <- lang_ru;; *);
+	[1644-1912 гг.]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Маньчжурская династия, сохранившая конфуцианскую ортодоксию и кэцзюй до 1905 г.
+	Одновременно развивалась «школа доказательных исследований» (као чжэн сюэ),
+	критиковавшая сунскую метафизику.]
+	(* <- lang_ru;; *);;
+
+state_lu
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Лу]
+	(* <- lang_ru;; *);
+	[state of Lu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Лу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство на территории нынешней провинции Шаньдун, со столицей в Цюйфу; родина Конфуция и
+	место ведения летописи «Чуньцю».]
+	(* <- lang_ru;; *);;
+
+state_qi
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Ци]
+	(* <- lang_ru;; *);
+	[state of Qi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ци]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство на востоке Шаньдуна, знаменитое академией Цися у ворот столицы Линьцзы, где при
+	покровительстве правителей жили учёные «ста школ».]
+	(* <- lang_ru;; *);;
+
+state_zou
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Цзоу]
+	(* <- lang_ru;; *);
+	[state of Zou]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Цзоу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Небольшое царство рядом с Лу, родина Мэн-цзы.]
+	(* <- lang_ru;; *);;
+
+state_wei
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Вэй]
+	(* <- lang_ru;; *);
+	[state of Wei]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Вэй]
+	(* <- lang_ru;; *);
+	[Лян]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство, куда Конфуций приезжал несколько раз и где погиб Цзы Лу; Мэн-цзы беседовал с
+	его правителем, известным как Хуэй-ван из Лян.]
+	(* <- lang_ru;; *);;
+
+state_zhao
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Чжао]
+	(* <- lang_ru;; *);
+	[state of Zhao]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чжао]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство на севере, родина Сюнь-цзы и одно из «Воюющих царств».]
+	(* <- lang_ru;; *);;
+
+state_chu
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Чу]
+	(* <- lang_ru;; *);
+	[state of Chu]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Чу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Южное царство, в котором Сюнь-цзы служил управляющим Ланьлином и где, по преданию,
+	родился Лао-цзы.]
+	(* <- lang_ru;; *);;
+
+state_han
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Хань]
+	(* <- lang_ru;; *);
+	[state of Han]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Хань (царство)]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство периода Чжаньго, откуда происходил Хань Фэй; не смешивать с императорской
+	династией Хань.]
+	(* <- lang_ru;; *);;
+
+state_song
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Сун]
+	(* <- lang_ru;; *);
+	[state of Song]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Сун (царство)]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Царство, считавшееся наследником династии Шан; родина Мо Ди и Чжуан-цзы.]
+	(* <- lang_ru;; *);;
+
+state_qin
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[царство Цинь]
+	(* <- lang_ru;; *);
+	[state of Qin]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Цинь (царство)]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Западное царство, где провели реформы Шан Яна и где легизм стал государственной
+	политикой; в 221 г. до н. э. объединило Китай.]
+	(* <- lang_ru;; *);;
+
+empire_china
+<- concept_historical_state;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[императорский Китай]
+	(* <- lang_ru;; *);
+	[imperial China]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Поднебесная]
+	(* <- lang_ru;; *);
+	[Чжунго]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Централизованная империя, существовавшая с 221 г. до н. э. до 1912 г. Конфуцианство было
+	её официальной идеологией на протяжении большей части этого времени.]
+	(* <- lang_ru;; *);;
+
+joseon_korea
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[Корея периода Чосон]
+	(* <- lang_ru;; *);
+	[Joseon Korea]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Корейское государство 1392-1897 гг., где неоконфуцианство стало государственной
+	идеологией, а буддизм был вытеснен из публичной сферы.]
+	(* <- lang_ru;; *);;
+
+tokugawa_japan
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[Япония периода Токугава]
+	(* <- lang_ru;; *);
+	[Tokugawa Japan]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Сёгунат Токугава (1603-1868), где конфуцианство школы Чжу Си выполняло роль официальной
+	идеологии, обосновывая сословную иерархию.]
+	(* <- lang_ru;; *);;
+
+dai_viet
+<- concept_historical_state;
+=> nrel_main_idtf:
+	[Дайвьет]
+	(* <- lang_ru;; *);
+	[Dai Viet]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[конфуцианский Вьетнам]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Вьетнамское государство, где с XI в. действовала экзаменационная система по китайскому
+	образцу, а Четырёхкнижие стало учебным каноном при династии Ле.]
+	(* <- lang_ru;; *);;
+

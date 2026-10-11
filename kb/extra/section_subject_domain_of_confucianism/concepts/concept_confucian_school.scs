@@ -1,0 +1,51 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_school - абсолютное понятие «направление конфуцианства».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_school
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[направление конфуцианства]
+	(* <- lang_ru;; *);
+	[school of Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucianism;
+=> nrel_inclusion:
+	concept_early_confucianism;
+	concept_han_confucianism;
+	concept_neo_confucianism;
+	concept_korean_confucianism;
+	concept_japanese_confucianism;
+=> nrel_note:
+	[Направление используется как домен большинства прикладных отношений предметной области
+	(основано*, является развитием*, противопоставлено*, включает положение учения*).]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (направление конфуцианства)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Направление конфуцианства - исторически сложившаяся совокупность
+					конфуцианских учений, объединённых общим периодом, регионом либо общим
+					способом истолкования канона.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucianism;
+				concept_early_confucianism;
+				concept_han_confucianism;
+				concept_neo_confucianism
+			};;
+	*);;
+

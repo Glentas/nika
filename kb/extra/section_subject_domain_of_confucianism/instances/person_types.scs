@@ -1,0 +1,90 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Типы личности в конфуцианстве.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+junzi
+<- concept_confucian_person_type;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[цзюнь-цзы]
+	(* <- lang_ru;; *);
+	[junzi (noble man)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[благородный муж]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Центральный тип личности: изначально «сын правителя», у Конфуция - человек, достигший
+	нравственной зрелости независимо от происхождения. «Благородный муж думает о долге,
+	малый человек думает о выгоде» (Лунь юй, 4.16).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_junzi;;
+
+shengren
+<- concept_confucian_person_type;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[шэн жэнь]
+	(* <- lang_ru;; *);
+	[shengren (sage)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[совершенномудрый]
+	(* <- lang_ru;; *);
+	[святой муж]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Высший идеал: человек, полностью осуществивший свою природу и потому способный
+	упорядочивать мир. Позднее титул «совершенномудрый» (шэн) официально присваивался
+	Конфуцию, а «второй совершенномудрый» (я шэн) - Мэн-цзы.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_shengren;;
+
+xiaoren
+<- concept_confucian_person_type;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[сяо жэнь]
+	(* <- lang_ru;; *);
+	[xiaoren (small man)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[малый человек]
+	(* <- lang_ru;; *);
+	[ничтожный человек]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Антитеза цзюнь-цзы: человек, руководствующийся выгодой, а не долгом. Пара «цзюнь-цзы -
+	сяо жэнь» - основная ось конфуцианской этики.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xiaoren;;
+
+shi_scholar
+<- concept_confucian_person_type;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[ши]
+	(* <- lang_ru;; *);
+	[shi (scholar)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[книжник]
+	(* <- lang_ru;; *);
+	[учёный-книжник]
+	(* <- lang_ru;; *);
+	[ши дафу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Социальный слой учёных-книжников, стоявший во главе конфуцианской иерархии сословий «ши
+	- нун - гун - шан» (учёные, земледельцы, ремесленники, торговцы) и пополнявшийся через
+	систему экзаменов кэцзюй.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_shi;;
+

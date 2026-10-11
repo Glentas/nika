@@ -1,0 +1,132 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Схема предметной области: максимальный класс объектов исследования, немаксимальные
+   классы и исследуемые отношения.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+section_subject_domain_of_confucianism
+=> nrel_main_idtf:
+	[Раздел. Предметная область конфуцианства]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of Confucianism]
+	(* <- lang_en;; *);
+<- atomic_section;;
+
+section_subject_domain_of_confucianism = [*
+	subject_domain_of_confucianism
+	<- sc_node_struct;
+	=> nrel_main_idtf:
+		[Предметная область конфуцианства]
+		(* <- lang_ru;; *);
+		[Subject domain of Confucianism]
+		(* <- lang_en;; *);
+	<- subject_domain;
+	-> rrel_maximum_studied_object_class:
+		concept_confucianism;
+	-> rrel_not_maximum_studied_object_class:
+		concept_philosophical_teaching;
+		concept_confucian_school;
+		concept_early_confucianism;
+		concept_han_confucianism;
+		concept_neo_confucianism;
+		concept_cheng_zhu_school;
+		concept_lu_wang_school;
+		concept_korean_confucianism;
+		concept_japanese_confucianism;
+		concept_modern_confucianism;
+		concept_daoism;
+		concept_buddhism;
+		concept_legalism;
+		concept_mohism;
+		concept_person_of_east_asian_tradition;
+		concept_east_asian_philosopher;
+		concept_chinese_philosopher;
+		concept_person_of_confucian_tradition;
+		concept_confucian_thinker;
+		concept_confucian_disciple;
+		concept_confucian_official;
+		concept_confucian_person_type;
+		concept_confucian_text;
+		concept_confucian_canonical_book;
+		concept_confucian_commentary;
+		concept_confucian_recorded_saying;
+		concept_confucian_treatise;
+		concept_confucian_canon;
+		concept_confucian_concept;
+		concept_confucian_virtue;
+		concept_confucian_cardinal_virtue;
+		concept_confucian_category;
+		concept_confucian_cosmological_category;
+		concept_confucian_anthropological_category;
+		concept_confucian_principle_doctrine;
+		concept_confucian_self_cultivation_method;
+		concept_confucian_ritual;
+		concept_confucian_social_relation;
+		concept_chinese_term;
+		concept_confucian_institution;
+		concept_imperial_examination;
+		concept_confucian_educational_institution;
+		concept_confucian_temple;
+		concept_historical_period;
+		concept_chinese_dynasty;
+		concept_historical_state;
+	-> rrel_explored_relation:
+		nrel_founded_by;
+		nrel_developed_from;
+		nrel_represented_by;
+		nrel_authored;
+		nrel_part_of_canon;
+		nrel_commented_by;
+		nrel_lived_in_period;
+		nrel_associated_with_state;
+		nrel_spread_in;
+		nrel_teacher_of;
+		nrel_influenced;
+		nrel_opposed_to;
+		nrel_introduces_category;
+		nrel_promotes_virtue;
+		nrel_includes_doctrine;
+		nrel_used_in_examination;
+		nrel_studied_in;
+		nrel_located_in;
+		nrel_chinese_term;;
+
+*];;
+
+section_subject_domain_of_confucianism
+-> rrel_key_sc_element:
+	subject_domain_of_confucianism;
+	concept_confucianism;
+	concept_confucian_school;
+	concept_confucian_thinker;
+	concept_confucian_text;
+	concept_confucian_canon;
+	concept_confucian_virtue;
+	concept_confucian_category;
+	concept_confucian_principle_doctrine;
+	concept_confucian_ritual;
+	concept_confucian_social_relation;
+	concept_confucian_institution;
+	concept_imperial_examination;
+	concept_historical_state;
+	nrel_founded_by;
+	nrel_developed_from;
+	nrel_represented_by;
+	nrel_authored;
+	nrel_part_of_canon;
+	nrel_commented_by;
+	nrel_lived_in_period;
+	nrel_associated_with_state;
+	nrel_spread_in;
+	nrel_teacher_of;
+	nrel_influenced;
+	nrel_opposed_to;
+	nrel_introduces_category;
+	nrel_promotes_virtue;
+	nrel_includes_doctrine;
+	nrel_used_in_examination;
+	nrel_studied_in;
+	nrel_located_in;
+	nrel_chinese_term;;
+

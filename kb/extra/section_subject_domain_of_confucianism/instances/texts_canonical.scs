@@ -1,0 +1,395 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Канонические тексты.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+analects
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+<- concept_confucian_recorded_saying;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[«Лунь юй»]
+	(* <- lang_ru;; *);
+	[Analects]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Беседы и суждения]
+	(* <- lang_ru;; *);
+	[Лунь юй]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Двадцать глав записей бесед Конфуция с учениками, составленные в V-IV вв. до н. э.
+	учениками и последователями учеников. Не является сочинением самого Конфуция, но служит
+	главным источником его учения и первым текстом Четырёхкнижия.]
+	(* <- lang_ru;; *);
+=> nrel_commented_by:
+	zheng_xuan;
+	zhu_xi;
+=> nrel_introduces_category:
+	ren;
+	li_ritual;
+	junzi;
+	xiaoren;
+	xiao;
+	shu_reciprocity;
+	zhong_loyalty;
+	yi;
+	wen_culture;
+=> nrel_part_of_canon:
+	four_books;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;
+	sungkyunkwan;
+	yushima_seido;
+=> nrel_used_in_examination:
+	examination_mingjing;
+	examination_jinshi;;
+
+mencius_book
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+<- concept_confucian_recorded_saying;
+=> nrel_main_idtf:
+	[«Мэн-цзы»]
+	(* <- lang_ru;; *);
+	[Mencius (book)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Книга Мэн-цзы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Семь глав диалогов Мэн-цзы с правителями и оппонентами. Включён в Четырёхкнижие Чжу Си,
+	до этого считался сочинением мыслителя (цзы шу), а не каноном.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	mencius;
+=> nrel_commented_by:
+	zhu_xi;
+=> nrel_introduces_category:
+	innate_goodness_of_nature;
+	ren;
+	yi;
+	human_nature_xing;
+	mandate_of_heaven;
+=> nrel_part_of_canon:
+	four_books;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+	sungkyunkwan;
+=> nrel_used_in_examination:
+	examination_jinshi;;
+
+great_learning
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Да сюэ»]
+	(* <- lang_ru;; *);
+	[Great Learning]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Великое учение]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первоначально - глава 42 канона «Ли цзи». Чжу Си выделил её в самостоятельный текст
+	Четырёхкнижия и разделил на «канон» (Цзэн-цзы со слов Конфуция) и «комментарий».
+	Содержит схему «три устоя и восемь ступеней».]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zengzi;
+=> nrel_commented_by:
+	zhu_xi;
+=> nrel_introduces_category:
+	three_guides_eight_steps;
+	ge_wu;
+	de_virtue;
+=> nrel_part_of_canon:
+	four_books;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;
+	sungkyunkwan;
+=> nrel_used_in_examination:
+	examination_jinshi;
+	palace_exam;;
+
+doctrine_of_mean
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Чжун юн»]
+	(* <- lang_ru;; *);
+	[Doctrine of the Mean]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Учение о середине]
+	(* <- lang_ru;; *);
+	[Учение о срединном и равновесном]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первоначально - глава 31 канона «Ли цзи». Традиция приписывает текст Цзы Сы, внуку
+	Конфуция. Чжу Си включил его в Четырёхкнижие как самый метафизичный текст канона: в нём
+	соединены этика меры и космология искренности (чэн).]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zisi;
+=> nrel_commented_by:
+	zheng_xuan;
+	zhu_xi;
+=> nrel_introduces_category:
+	doctrine_of_the_mean;
+	cheng_sincerity;
+	tian_heaven;
+	human_nature_xing;
+=> nrel_part_of_canon:
+	four_books;
+=> nrel_studied_in:
+	guozijian;
+	sungkyunkwan;
+=> nrel_used_in_examination:
+	examination_jinshi;
+	palace_exam;;
+
+book_of_changes
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«И цзин»]
+	(* <- lang_ru;; *);
+	[Book of Changes]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Книга Перемен]
+	(* <- lang_ru;; *);
+	[Чжоу и]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Гадательный памятник, ставший философским каноном благодаря «десяти крыльям» (Ши и),
+	которые традиция приписывает Конфуцию. Основа космологии инь-ян и восемь триграмм; «И
+	цзин» одинаково использовался конфуцианцами и даосами.]
+	(* <- lang_ru;; *);
+=> nrel_commented_by:
+	cheng_yi;
+	zhu_xi;
+=> nrel_introduces_category:
+	dao;
+	yin_yang;
+	taiji;
+	wu_ji;
+=> nrel_part_of_canon:
+	five_classics;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+	yuelu_academy;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+
+book_of_documents
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Шу цзин»]
+	(* <- lang_ru;; *);
+	[Book of Documents]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Книга Историй]
+	(* <- lang_ru;; *);
+	[Шан шу]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Собрание речей и указов легендарных и древних правителей (Яо, Шунь, Юй, правители Шан и
+	Чжоу). Источник учения о мандате Неба (тянь мин): небо передаёт мандат добродетельному и
+	отнимает его у порочного.]
+	(* <- lang_ru;; *);
+=> nrel_introduces_category:
+	mandate_of_heaven;
+	de_virtue;
+	tian_heaven;
+=> nrel_part_of_canon:
+	five_classics;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+
+book_of_odes
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Ши цзин»]
+	(* <- lang_ru;; *);
+	[Book of Odes]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Книга Песен]
+	(* <- lang_ru;; *);
+	[Книга песен и гимнов]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[305 песен и гимнов XI-VII вв. до н. э., разделённых на «фэн» (нравы царств), «я»
+	(придворные оды) и «сун» (гимны). Конфуций: «Если не изучать „Ши цзин“, не найдёшь слов»
+	(Лунь юй, 16.13).]
+	(* <- lang_ru;; *);
+=> nrel_introduces_category:
+	wen_culture;
+	shu_reciprocity;
+=> nrel_part_of_canon:
+	five_classics;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+
+book_of_rites
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Ли цзи»]
+	(* <- lang_ru;; *);
+	[Book of Rites]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Записки о ритуале]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Сорок девять глав рассуждений о ритуале, собранных Дай Шэном в эпоху Хань. Содержит
+	главы «Да сюэ» и «Чжун юн», а также «Ли юнь» («Ход ритуала») с описанием «великого
+	единства» (да тун).]
+	(* <- lang_ru;; *);
+=> nrel_commented_by:
+	zheng_xuan;
+=> nrel_introduces_category:
+	li_ritual;
+	ritual_ancestor_veneration;
+	ritual_funeral;
+	ritual_sacrifice;
+	great_unity;
+=> nrel_part_of_canon:
+	five_classics;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+
+spring_autumn_annals
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Чуньцю»]
+	(* <- lang_ru;; *);
+	[Spring and Autumn Annals]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Вёсны и Осени]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Летопись царства Лу за 722-481 гг. до н. э., крайне лаконичная; традиция приписывает её
+	редактуру Конфуцию. «Микрооценки» (бао бянь) через выбор слов выражают моральный суд -
+	отсюда тезис об «исправлении имён».]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	confucius;
+=> nrel_commented_by:
+	dong_zhongshu;
+=> nrel_introduces_category:
+	rectification_of_names;
+=> nrel_part_of_canon:
+	five_classics;
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+
+rites_of_zhou
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Чжоу ли»]
+	(* <- lang_ru;; *);
+	[Rites of Zhou]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Ритуалы Чжоу]
+	(* <- lang_ru;; *);
+	[Чжоу гуань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Описание идеальной чиновной системы Чжоу из шести ведомств. Стало основой конфуцианской
+	программы государственного устройства.]
+	(* <- lang_ru;; *);
+=> nrel_commented_by:
+	zheng_xuan;
+=> nrel_introduces_category:
+	li_ritual;
+	ritual_sacrifice_to_heaven;
+=> nrel_part_of_canon:
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;;
+
+ceremonial_ritual
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«И ли»]
+	(* <- lang_ru;; *);
+	[Ceremonial and Ritual]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Церемонии и ритуалы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Древнейший из ритуальных канонов: пошаговые описания церемоний - возложения шапки,
+	свадьбы, похорон, приёма гостей, стрельбы из лука.]
+	(* <- lang_ru;; *);
+=> nrel_commented_by:
+	zheng_xuan;
+=> nrel_introduces_category:
+	ritual_capping;
+	ritual_marriage;
+	ritual_funeral;
+	ritual_archery;
+=> nrel_part_of_canon:
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;;
+
+classic_of_filial_piety
+<- concept_confucian_text;
+<- concept_confucian_canonical_book;
+=> nrel_main_idtf:
+	[«Сяо цзин»]
+	(* <- lang_ru;; *);
+	[Classic of Filial Piety]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Канон сыновней почтительности]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Небольшой канон в 18 главах в форме беседы Конфуция с Цзэн-цзы о сяо. В эпоху Тан по
+	указу императора Сюань-цзуна (733 г.) изучался во всех школах как первый учебный текст.]
+	(* <- lang_ru;; *);
+=> nrel_authored:
+	zengzi;
+=> nrel_introduces_category:
+	xiao;
+	zhong_loyalty;
+=> nrel_part_of_canon:
+	thirteen_classics;
+=> nrel_studied_in:
+	guozijian;
+	sungkyunkwan;
+=> nrel_used_in_examination:
+	examination_mingjing;;
+

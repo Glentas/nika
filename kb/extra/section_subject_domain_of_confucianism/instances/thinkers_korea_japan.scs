@@ -1,0 +1,141 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Мыслители Кореи, Японии и нового времени.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+yi_hwang
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Ли Хван]
+	(* <- lang_ru;; *);
+	[Yi Hwang]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Тхвегэ]
+	(* <- lang_ru;; *);
+	[Ли Кёнхо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ли Хван (1501-1570), корейский мыслитель эпохи Чосон, прозванный «восточным Конфуцием».
+	Основал академию Тосан, занимал высокие посты, но многократно отказывался от службы.
+	Портрет Ли Хвана изображён на банкноте в 1000 вон.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	joseon_korea;
+=> nrel_influenced:
+	yi_i;
+=> nrel_lived_in_period:
+	period_joseon;;
+
+yi_i
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Ли И]
+	(* <- lang_ru;; *);
+	[Yi I]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Юльгок]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Ли И (1536-1584) - корейский неоконфуцианец, оппонент Ли Хвана в споре о четырёх началах
+	и семи чувствах; его мать, поэтесса Син Саимдан, также изображена на корейских
+	банкнотах.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	joseon_korea;
+=> nrel_lived_in_period:
+	period_joseon;;
+
+hayashi_razan
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Хаяси Радзан]
+	(* <- lang_ru;; *);
+	[Hayashi Razan]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Хаяси Радзан (1583-1657) - японский конфуцианец, служивший сёгунам Токугава Иэясу,
+	Хидэтаде, Иэмицу и Иэцуне. Сделал учение Чжу Си официальной идеологией бакуфу и
+	обосновал сословную иерархию си-но-ко-сё.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	tokugawa_japan;
+=> nrel_lived_in_period:
+	period_edo;;
+
+nakae_toju
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Накаэ Тодзю]
+	(* <- lang_ru;; *);
+	[Nakae Toju]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Накаэ Хиройоши]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Накаэ Тодзю (1608-1648) - основатель японской школы Ван Янмина, прозванный «святым из
+	Оми». Поставил сыновнюю почтительность (сяо) в основание учения, соединив его с японской
+	этикой.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	tokugawa_japan;
+=> nrel_lived_in_period:
+	period_edo;;
+
+kang_youwei
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Кан Ювэй]
+	(* <- lang_ru;; *);
+	[Kang Youwei]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Кан Ювэй (1858-1927) - лидер «Ста дней реформ» 1898 г. В сочинениях «Да тун шу» («Книга
+	о великом единстве») и «Конфуций как реформатор» трактовал Конфуция как преобразователя
+	институтов, а не как консерватора.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_qing;
+	period_modern_east_asia;;
+
+xiong_shili
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Сюн Шили]
+	(* <- lang_ru;; *);
+	[Xiong Shili]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Сюн Шили (1885-1968) - основатель течения «нового конфуцианства» XX в.; в трактате
+	«Новое учение о сознании» (1944) соединил неоконфуцианскую метафизику с буддийской
+	йогачарой.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	period_modern_east_asia;;
+

@@ -1,0 +1,43 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_korean_confucianism - абсолютное понятие «корейское конфуцианство».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_korean_confucianism
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[корейское конфуцианство]
+	(* <- lang_ru;; *);
+	[Korean Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_school;
+=> nrel_note:
+	[Конфуцианство в Корее, достигшее статуса государственной идеологии в период Чосон
+	(1392-1897). Характерная черта - дискуссия о «четырёх началах и семи чувствах» (садан
+	чхильчжон) между школами Ли Хвана и Ли И.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (корейское конфуцианство)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Корейское конфуцианство - направление конфуцианства, развивавшееся на
+					Корейском полуострове и преимущественно ориентированное на
+					неоконфуцианство Чжу Си.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school
+			};;
+	*);;
+

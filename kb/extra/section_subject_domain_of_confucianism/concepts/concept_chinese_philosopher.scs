@@ -1,0 +1,41 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_chinese_philosopher - абсолютное понятие «китайский философ».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_chinese_philosopher
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[китайский философ]
+	(* <- lang_ru;; *);
+	[Chinese philosopher]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_east_asian_philosopher;
+=> nrel_note:
+	[Подкласс восточноазиатского философа; включает мыслителей всех школ (конфуцианство,
+	даосизм, легизм, моизм).]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (китайский философ)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Китайский философ - восточноазиатский философ, живший и работавший в
+					китайских государствах.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_east_asian_philosopher
+			};;
+	*);;
+

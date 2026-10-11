@@ -1,0 +1,59 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_person_of_confucian_tradition - абсолютное понятие «деятель конфуцианской традиции».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_person_of_confucian_tradition
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[деятель конфуцианской традиции]
+	(* <- lang_ru;; *);
+	[person of the Confucian tradition]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_person_of_east_asian_tradition;
+=> nrel_inclusion:
+	concept_confucian_thinker;
+	concept_confucian_disciple;
+	concept_confucian_official;
+=> nrel_note:
+	[Класс-посредник, служащий первым доменом отношений «жил в исторический период*», «связан
+	с государством*», «представлено последователем*», «является учителем*».]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		=> nrel_main_idtf:
+			[по роду деятельности]
+			(* <- lang_ru;; *);;
+		-> concept_confucian_thinker;;
+		-> concept_confucian_disciple;;
+		-> concept_confucian_official;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (деятель конфуцианской традиции)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Деятель конфуцианской традиции - лицо, которое создавало, передавало,
+					комментировало либо практически применяло конфуцианское учение.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_person_of_east_asian_tradition;
+				concept_confucian_thinker;
+				concept_confucian_disciple;
+				concept_confucian_official
+			};;
+	*);;
+

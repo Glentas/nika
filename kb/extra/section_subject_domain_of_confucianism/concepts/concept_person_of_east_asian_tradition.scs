@@ -1,0 +1,44 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_person_of_east_asian_tradition - абсолютное понятие «деятель восточноазиатской традиции».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_person_of_east_asian_tradition
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[деятель восточноазиатской традиции]
+	(* <- lang_ru;; *);
+	[person of the East Asian tradition]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	concept_person_of_confucian_tradition;
+	concept_east_asian_philosopher;
+=> nrel_note:
+	[Внешний класс-объединение, введённый потому, что учениками конфуцианцев были не только
+	конфуцианцы: у Сюнь-цзы учились легисты Хань Фэй и Ли Сы. Без общего надмножества
+	отношение «является учителем*» выходило бы за пределы своих доменов.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (деятель восточноазиатской традиции)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Деятель восточноазиатской традиции - лицо, принадлежащее книжной
+					философской традиции Китая, Кореи, Японии или Вьетнама.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_person_of_confucian_tradition;
+				concept_east_asian_philosopher
+			};;
+	*);;
+

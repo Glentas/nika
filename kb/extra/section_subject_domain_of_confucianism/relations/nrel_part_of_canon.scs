@@ -1,0 +1,56 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_part_of_canon - относительное понятие «входит в состав канонического собрания*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_part_of_canon
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[входит в состав канонического собрания*]
+	(* <- lang_ru;; *);
+	[part of canonical collection*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Один текст может входить в несколько собраний: «Лунь юй» принадлежит и Четырёхкнижию, и
+	Тринадцатикнижию.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_confucian_text;
+=> nrel_second_domain: concept_confucian_canon;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_confucian_text;
+				concept_confucian_canon
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (входит в состав канонического собрания*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Входит в состав канонического собрания* - бинарное ориентированное
+					отношение, связывающее конфуцианский текст и каноническое собрание, в
+					которое этот текст включён.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_text;
+				concept_confucian_canon
+			};;
+	*);;
+

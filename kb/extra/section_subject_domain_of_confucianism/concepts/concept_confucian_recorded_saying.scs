@@ -1,0 +1,42 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_recorded_saying - абсолютное понятие «запись бесед и суждений».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_recorded_saying
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[запись бесед и суждений]
+	(* <- lang_ru;; *);
+	[record of conversations and sayings]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_text;
+=> nrel_note:
+	[Жанр «юй» (изречение) и «лу» (запись). «Лунь юй» составлен учениками и последователями
+	учеников Конфуция, «Мэн-цзы» и «Чуань си лу» Ван Янмина также восходят к устной
+	проповеди.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (запись бесед и суждений)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Запись бесед и суждений - конфуцианский текст, составленный учениками на
+					основе устных бесед и изречений мыслителя.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_text
+			};;
+	*);;
+

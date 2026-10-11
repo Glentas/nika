@@ -1,0 +1,43 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_modern_confucianism - абсолютное понятие «новое конфуцианство».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_modern_confucianism
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[новое конфуцианство]
+	(* <- lang_ru;; *);
+	[modern Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_school;
+=> nrel_note:
+	[Конфуцианство нового и новейшего времени: от реформаторских проектов Кан Ювэя (конец XIX
+	в.) до течения «нового конфуцианства» XX в. (Сюн Шили, Моу Цзунсань, Тан Цзюньи),
+	ставившего задачу соединить конфуцианскую этику с демократией и наукой.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (новое конфуцианство)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Новое конфуцианство - направление конфуцианства, развивавшееся с конца
+					XIX в. в условиях кризиса имперской системы и диалога с западной
+					философией.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school
+			};;
+	*);;
+

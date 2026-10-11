@@ -1,0 +1,42 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_disciple - абсолютное понятие «ученик конфуцианского мыслителя».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_disciple
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[ученик конфуцианского мыслителя]
+	(* <- lang_ru;; *);
+	[disciple of a Confucian thinker]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_person_of_confucian_tradition;
+=> nrel_note:
+	[В «Лунь юй» и «Ши цзи» («Исторические записки» Сыма Цяня) упоминается 77 учеников
+	Конфуция; наиболее известны Янь Хуэй, Цзы Гун, Цзы Лу, Цзы Ся, Цзэн Шэнь (Цзэн-цзы), Ю
+	Жо, Жань Цю.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (ученик конфуцианского мыслителя)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Ученик конфуцианского мыслителя - деятель конфуцианской традиции,
+					получавший наставление непосредственно от другого такого деятеля.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_person_of_confucian_tradition
+			};;
+	*);;
+

@@ -1,0 +1,143 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Смежные учения: даосизм, буддизм, легизм, моизм.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+teaching_laozi
+<- concept_daoism;
+<- concept_philosophical_teaching;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение Лао-цзы]
+	(* <- lang_ru;; *);
+	[teaching of Laozi]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[дао дэ цзин]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Изложено в «Дао дэ цзине» (V-IV вв. до н. э.). Идеал - недеяние (у вэй) и возврат к
+	простоте; ритуал оценивается как «источник смуты и начало неверности», что прямо
+	противоположно конфуцианской оценке ли.]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+=> nrel_spread_in:
+	empire_china;;
+
+teaching_zhuangzi
+<- concept_daoism;
+<- concept_philosophical_teaching;
+=> nrel_main_idtf:
+	[учение Чжуан-цзы]
+	(* <- lang_ru;; *);
+	[teaching of Zhuangzi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Развил даосизм в сторону скептицизма и свободы духа. В трактате «Чжуан-цзы» Конфуций
+	нередко выведен как персонаж, изрекающий даосские истины, что показывает интенсивность
+	взаимодействия двух традиций.]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+=> nrel_spread_in:
+	empire_china;;
+
+teaching_chan
+<- concept_buddhism;
+<- concept_philosophical_teaching;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[учение чань]
+	(* <- lang_ru;; *);
+	[Chan Buddhism]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чань-буддизм]
+	(* <- lang_ru;; *);
+	[дзэн]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Китайская школа буддизма, сложившаяся к эпохе Тан. Её понятийный аппарат (природа Будды,
+	просветление, «не-мысль») был переработан неоконфуцианцами: Чжу Си строил «исследование
+	вещей» как сознательную альтернативу чаньскому «внезапному озарению».]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+	school_zhu_xi;
+	school_cheng_brothers;
+	school_hayashi_razan;
+	school_xiong_shili;
+=> nrel_spread_in:
+	empire_china;
+	tokugawa_japan;
+	joseon_korea;;
+
+teaching_han_fei
+<- concept_legalism;
+<- concept_philosophical_teaching;
+=> nrel_main_idtf:
+	[учение Хань Фэя]
+	(* <- lang_ru;; *);
+	[teaching of Han Fei]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[фа цзя]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Хань Фэй учился у Сюнь-цзы вместе с Ли Сы и соединил легистские идеи Шан Яна (фа -
+	закон), Шэнь Бухая (шу - метод управления) и Шэнь Дао (ши - позиция силы). Легизм стал
+	идеологией царства Цинь и империи Цинь (221-206 до н. э.).]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+	school_mencius;
+	school_dong_zhongshu;
+=> nrel_spread_in:
+	state_qin;
+	empire_china;;
+
+teaching_shang_yang
+<- concept_legalism;
+<- concept_philosophical_teaching;
+=> nrel_main_idtf:
+	[учение Шан Яна]
+	(* <- lang_ru;; *);
+	[teaching of Shang Yang]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Шан Ян провёл в царстве Цинь реформы (356 и 350 гг. до н. э.), основанные на едином
+	законе, системе коллективной ответственности и наградах за земледелие и войну. Трактат
+	«Шан цзюнь шу» приписывается его школе.]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+=> nrel_spread_in:
+	state_qin;;
+
+teaching_mo_di
+<- concept_mohism;
+<- concept_philosophical_teaching;
+=> nrel_main_idtf:
+	[учение Мо Ди]
+	(* <- lang_ru;; *);
+	[teaching of Mo Di]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[моизм]
+	(* <- lang_ru;; *);
+	[школа мо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мо Ди проповедовал «всеобщую любовь» (цзянь ай) без различения близких и чужих и
+	критиковал конфуцианские похоронные и музыкальные ритуалы как разорительные. Мэн-цзы
+	считал учение Мо главной угрозой: «Слова Ян Чу и Мо Ди наполняют мир».]
+	(* <- lang_ru;; *);
+=> nrel_opposed_to:
+	school_confucius;
+	school_mencius;
+	school_dong_zhongshu;
+=> nrel_spread_in:
+	empire_china;;
+

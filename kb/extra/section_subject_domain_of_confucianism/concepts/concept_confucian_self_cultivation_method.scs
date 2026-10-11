@@ -1,0 +1,42 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_self_cultivation_method - абсолютное понятие «метод самосовершенствования».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_self_cultivation_method
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[метод самосовершенствования]
+	(* <- lang_ru;; *);
+	[method of self-cultivation]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_principle_doctrine;
+=> nrel_note:
+	[Два конкурирующих метода: «исследование вещей» (гэ у) школы Чэн - Чжу и «обращение к
+	врождённому знанию» (чжи лян чжи) школы Лу - Ван. Спор о методе был главным содержанием
+	встречи у озера Эху (1175 г.).]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (метод самосовершенствования)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Метод самосовершенствования - положение конфуцианского учения,
+					предписывающее способ нравственной работы человека над собой.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_principle_doctrine
+			};;
+	*);;
+

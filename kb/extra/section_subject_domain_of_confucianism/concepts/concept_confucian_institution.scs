@@ -1,0 +1,54 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_institution - абсолютное понятие «конфуцианский институт».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_institution
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[конфуцианский институт]
+	(* <- lang_ru;; *);
+	[Confucian institution]
+	(* <- lang_en;; *);
+=> nrel_inclusion:
+	concept_confucian_educational_institution;
+	concept_confucian_temple;
+=> nrel_note:
+	[Общее надмножество для учебных заведений и храмов; введено, чтобы отношение «расположено
+	в*» имело один корректный первый домен.]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		=> nrel_main_idtf:
+			[по назначению]
+			(* <- lang_ru;; *);;
+		-> concept_confucian_educational_institution;;
+		-> concept_confucian_temple;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (конфуцианский институт)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Конфуцианский институт - устойчивое учреждение, через которое
+					конфуцианство воспроизводилось как государственная идеология: учебное
+					заведение либо ритуальный центр.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_educational_institution;
+				concept_confucian_temple
+			};;
+	*);;
+

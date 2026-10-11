@@ -1,0 +1,490 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Положения учения и методы самосовершенствования.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+golden_rule
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[золотое правило]
+	(* <- lang_ru;; *);
+	[golden rule]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[принцип взаимности]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[«Того, чего не желаешь себе, не делай другим» (Лунь юй, 12.2 и 15.24). Одна из
+	древнейших формулировок правила в негативной форме; в конфуцианской традиции
+	обозначается словом шу (взаимность).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_shu;;
+
+rectification_of_names
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[исправление имён]
+	(* <- lang_ru;; *);
+	[rectification of names]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чжэн мин]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[«Если имена неправильны, то слова не имеют под собой оснований... дела не могут успешно
+	осуществляться» (Лунь юй, 13.3). Государь должен быть государём, подданный - подданным,
+	отец - отцом, сын - сыном (12.11).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zheng_ming;;
+
+mandate_of_heaven
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[мандат Неба]
+	(* <- lang_ru;; *);
+	[Mandate of Heaven]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[тянь мин]
+	(* <- lang_ru;; *);
+	[небесное повеление]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Небо передаёт право правления добродетельному и отнимает его у порочного; поэтому смена
+	династии законна, а бедствия толкуются как предупреждение. Мэн-цзы: «Небо видит так, как
+	видит народ; Небо слышит так, как слышит народ».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_tian_ming;;
+
+doctrine_of_the_mean
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[учение о середине]
+	(* <- lang_ru;; *);
+	[doctrine of the mean]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чжун юн]
+	(* <- lang_ru;; *);
+	[срединность и постоянство]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Удержание меры: «чжун» - неуклонение ни в ту, ни в другую сторону, «юн» - постоянство.
+	Конфуций: «Как же редко встречается середина среди народа!» (Лунь юй, 6.29). В «Чжун юн»
+	мера становится онтологическим принципом.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zhong_yong;;
+
+three_principles_and_five_constants
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[три устоя и пять постоянств]
+	(* <- lang_ru;; *);
+	[three guides and five constants]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сань ган у чан]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Формула Дун Чжуншу: три устоя (подданный следует государю, сын следует отцу, жена
+	следует мужу) и пять постоянств (жэнь, и, ли, чжи, синь). Стала основой имперской этики
+	и сохраняла силу до начала XX в.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_san_gang;
+	term_wu_chang;;
+
+innate_goodness_of_nature
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[врождённая доброта природы человека]
+	(* <- lang_ru;; *);
+	[innate goodness of human nature]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[син шань]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Тезис Мэн-цзы: у каждого человека есть «четыре начала» (сы дуань) - сострадание (начало
+	жэнь), стыд (начало и), уступчивость (начало ли) и различение (начало чжи); развитие
+	этих начал и есть добродетель.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xing;;
+
+innate_evil_of_nature
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[изначальная порочность природы человека]
+	(* <- lang_ru;; *);
+	[innate badness of human nature]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[син э]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Тезис Сюнь-цзы: «Природа человека порочна, добро в ней - результат деятельности».
+	Исправление достигается обучением, ритуалом и законом, поэтому роль наставника и учителя
+	у Сюнь-цзы выше, чем у Мэн-цзы.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xing;;
+
+unity_of_knowledge_and_action
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[единство знания и действия]
+	(* <- lang_ru;; *);
+	[unity of knowledge and action]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[чжи син хэ и]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Тезис Ван Янмина: «Знание - начало действия, действие - завершение знания»; знание, не
+	ставшее действием, ещё не есть знание. Противопоставлен чжусианской схеме «сначала
+	исследовать вещи, потом действовать».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zhi_xing_he_yi;;
+
+innate_knowledge
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[врождённое знание]
+	(* <- lang_ru;; *);
+	[innate knowledge]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[лян чжи]
+	(* <- lang_ru;; *);
+	[чжи лян чжи]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Понятие восходит к Мэн-цзы (человек от рождения знает, что хорошо), у Ван Янмина стало
+	методом: «распространять врождённое знание» (чжи лян чжи) - значит во всех делах
+	следовать непосредственному нравственному чувству.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zhi_liangzhi;;
+
+interaction_of_heaven_and_human
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[взаимодействие Неба и человека]
+	(* <- lang_ru;; *);
+	[interaction between Heaven and humankind]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[тянь жэнь гань ин]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Доктрина Дун Чжуншу: Небо и человек подобны друг другу, и ошибки правления вызывают
+	аномалии - затмения, наводнения, засухи, - которые суть предостережения Неба.
+	Обосновывала право министров критиковать императора.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_tian_ren_gan_ying;;
+
+dao_transmission
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[передача дао]
+	(* <- lang_ru;; *);
+	[transmission of the Way]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[дао тун]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Схема ортодоксальной преемственности, предложенная Хань Юем: Яо - Шунь - Юй - Тан -
+	Вэнь-ван - Чжоу-гун - Конфуций - Мэн-цзы. Чжу Си продлил её до Чжоу Дуньи, братьев Чэн и
+	себя, закрепив канон школы Чэн - Чжу.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_dao_tong;;
+
+three_guides_eight_steps
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[три устоя и восемь ступеней]
+	(* <- lang_ru;; *);
+	[three guides and eight steps]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сань ган ба му]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Схема «Да сюэ»: три цели (явить светлую добродетель, обновить народ, достичь предела
+	совершенства) и восемь ступеней - исследование вещей, расширение знания, искренность
+	помыслов, выпрямление сердца, совершенствование себя, упорядочение семьи, управление
+	государством, мир во всей Поднебесной.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_san_gang_ba_mu;;
+
+heart_is_principle
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[сердце и есть принцип]
+	(* <- lang_ru;; *);
+	[the heart-mind is principle]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[синь цзи ли]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Основной тезис школы Лу - Ван: принцип не нужно искать вовне, он изначально присутствует
+	в сердце, поэтому учение есть раскрытие собственного сердца, а не накопление сведений.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_principle;
+	term_xin_heart;;
+
+principle_is_fundamental
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[принцип первичен по отношению к материальной силе]
+	(* <- lang_ru;; *);
+	[principle precedes material force]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ли цай ци сянь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Позиция Чжу Си: прежде чем появились Небо и земля, уже существовал принцип; ли и ци
+	неразделимы в вещах, но логически ли первично. Оппоненты (Чжан Цзай, Ван Фучжи)
+	отстаивали первичность ци.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_principle;
+	term_qi;;
+
+material_force_is_fundamental
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[материальная сила первична]
+	(* <- lang_ru;; *);
+	[material force is fundamental]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ци бэнь лунь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Позиция Чжан Цзая и Ван Фучжи: всё существующее есть ци, а ли - лишь порядок её
+	движения. Ван Фучжи формулировал это как «принцип - это принцип ци; вне ци нет
+	принципа».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_qi;;
+
+four_beginnings_issue_from_principle
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[четыре начала происходят от принципа]
+	(* <- lang_ru;; *);
+	[four beginnings issue from principle]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[садан ипхат]
+	(* <- lang_ru;; *);
+	[спор о четырёх началах и семи чувствах]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Позиция Ли Хвана в корейском споре 1559-1566 гг.: четыре начала (сы дуань) Мэн-цзы
+	порождены ли и потому безусловно добры, а семь чувств порождены ци и потому могут быть и
+	добрыми, и злыми.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_si_duan;;
+
+four_beginnings_issue_from_material_force
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[четыре начала происходят от материальной силы]
+	(* <- lang_ru;; *);
+	[four beginnings issue from material force]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[кипхаль ису]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Позиция Ли И: всякое проявление, включая четыре начала, исходит от ци, а ли лишь задаёт
+	меру; ли «едино, а его проявления различны». Спор сформировал две корейские школы и имел
+	политические последствия.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_si_duan;;
+
+great_unity
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[великое единство]
+	(* <- lang_ru;; *);
+	[great unity]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[да тун]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Образ идеального общества из главы «Ли юнь» канона «Ли цзи»: мир принадлежит всем,
+	выбирают достойных, заботятся не только о своих близких. В конце XIX в. Кан Ювэй
+	построил на нём утопию «Да тун шу».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_da_tong;;
+
+keju_selection
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[отбор достойных посредством экзаменов]
+	(* <- lang_ru;; *);
+	[selection of the worthy through examinations]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[кэцзюй цюй ши]
+	(* <- lang_ru;; *);
+	[сюань сянь цзюй нэн]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Положение, согласно которому должности должны замещаться не по рождению, а по знанию
+	канонов, проверенному экзаменом. Восходит к «Ши цзину» и «Ли цзи» («выдвигать достойных
+	и отбирать способных»), институционально оформлено в системе кэцзюй.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_keju;;
+
+ge_wu
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[исследование вещей]
+	(* <- lang_ru;; *);
+	[investigation of things]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[гэ у]
+	(* <- lang_ru;; *);
+	[гэ у чжи]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Первая из восьми ступеней «Да сюэ». Чжу Си понимал её как постижение ли в каждой вещи
+	шаг за шагом; Ван Янмин - как исправление собственных помыслов, поскольку «вещь» есть
+	лишь дело, в которое вовлечён умысел.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_ge_wu;;
+
+jing_sitting
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[почтительная собранность]
+	(* <- lang_ru;; *);
+	[reverent attention]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзин]
+	(* <- lang_ru;; *);
+	[чжу цзин]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Метод Чэн И и Чжу Си: удерживать сердце в собранности и почтительности, «как будто
+	встречая высокого гостя», вместо буддийской медитации на пустоту.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_jing;;
+
+quiet_sitting
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[сидение в покое]
+	(* <- lang_ru;; *);
+	[quiet sitting]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[цзин цзо]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Практика, унаследованная от буддийской медитации и переосмысленная конфуцианцами: Чжу Си
+	признавал её полезной для «собирания сердца», а Ван Янмин использовал как
+	подготовительный приём обучения.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_jing_zuo;;
+
+study_of_classics
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[изучение канонов]
+	(* <- lang_ru;; *);
+	[study of the classics]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ду шу]
+	(* <- lang_ru;; *);
+	[чтение книг]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[«Учиться и постоянно повторять - разве это не радость?» (Лунь юй, 1.1). Чтение канонов с
+	комментариями было главным способом самосовершенствования в школе Чэн - Чжу и основой
+	подготовки к кэцзюй.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_du_shu;;
+
+self_examination
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_principle_doctrine;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[самопроверка]
+	(* <- lang_ru;; *);
+	[self-examination]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сань син]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Цзэн-цзы: «Ежедневно я проверяю себя в трёх отношениях: преданно ли служил людям, был ли
+	благонадёжен с друзьями, повторял ли услышанное от учителя» (Лунь юй, 1.4).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_san_xing;;
+

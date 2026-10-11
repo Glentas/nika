@@ -1,0 +1,41 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_cosmological_category - абсолютное понятие «космологическая категория конфуцианства».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_cosmological_category
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[космологическая категория конфуцианства]
+	(* <- lang_ru;; *);
+	[cosmological category of Confucianism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_category;
+=> nrel_note:
+	[тайцзи (Великий предел), у цзи (беспредельное), ли (принцип), ци (материальная сила),
+	дао (путь), инь и ян, тянь (Небо).]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (космологическая категория конфуцианства)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Космологическая категория конфуцианства - конфуцианская философская
+					категория, описывающая строение и первооснову мироздания.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_category
+			};;
+	*);;
+

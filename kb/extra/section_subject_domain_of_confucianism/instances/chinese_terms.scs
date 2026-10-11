@@ -1,0 +1,556 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Китайские термины.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+term_ren
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[仁 (жэнь)]
+	(* <- lang_ru;; *);
+	[ren]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь ren. Иероглиф сочетает знаки «человек» и «два», что традиционно толкуют как
+	«человек по отношению к другому человеку». Переводы: человеколюбие, гуманность,
+	человечность.]
+	(* <- lang_ru;; *);;
+
+term_yi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[義 (и)]
+	(* <- lang_ru;; *);
+	[yi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь yi, упрощённое написание 义. Переводы: справедливость, долг, должное.]
+	(* <- lang_ru;; *);;
+
+term_li_ritual
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[禮 (ли)]
+	(* <- lang_ru;; *);
+	[li]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь li, упрощённое написание 礼. Означает и ритуал, и норму поведения, и
+	благопристойность. Омонимичен термину 理 (принцип), что постоянно создаёт трудности
+	перевода.]
+	(* <- lang_ru;; *);;
+
+term_zhi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[智 (чжи)]
+	(* <- lang_ru;; *);
+	[zhi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zhi. Мудрость, знание, способность различать.]
+	(* <- lang_ru;; *);;
+
+term_xin_trust
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[信 (синь)]
+	(* <- lang_ru;; *);
+	[xin]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь xin. Благонадёжность, верность слову. Знак состоит из элементов «человек» и
+	«слово».]
+	(* <- lang_ru;; *);;
+
+term_xiao
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[孝 (сяо)]
+	(* <- lang_ru;; *);
+	[xiao]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь xiao. Сыновняя почтительность.]
+	(* <- lang_ru;; *);;
+
+term_ti
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[悌 (ди)]
+	(* <- lang_ru;; *);
+	[ti]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь ti. Почтение младшего брата к старшему.]
+	(* <- lang_ru;; *);;
+
+term_zhong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[忠 (чжун)]
+	(* <- lang_ru;; *);
+	[zhong]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zhong. Преданность, верность делу и государю.]
+	(* <- lang_ru;; *);;
+
+term_shu
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[恕 (шу)]
+	(* <- lang_ru;; *);
+	[shu]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь shu. Взаимность, снисходительность; знак построен на элементах «как» и «сердце»,
+	то есть «поступать с другими как с собой».]
+	(* <- lang_ru;; *);;
+
+term_yong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[勇 (юн)]
+	(* <- lang_ru;; *);
+	[yong]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь yong. Мужество, смелость.]
+	(* <- lang_ru;; *);;
+
+term_wen
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[文 (вэнь)]
+	(* <- lang_ru;; *);
+	[wen]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь wen. Письменная культура, образованность, узор.]
+	(* <- lang_ru;; *);;
+
+term_de
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[德 (дэ)]
+	(* <- lang_ru;; *);
+	[de]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь de. Добродетель, действенная сила, благодать.]
+	(* <- lang_ru;; *);;
+
+term_cheng
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[誠 (чэн)]
+	(* <- lang_ru;; *);
+	[cheng]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь cheng, упрощённое написание 诚. Искренность, подлинность.]
+	(* <- lang_ru;; *);;
+
+term_jing
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[敬 (цзин)]
+	(* <- lang_ru;; *);
+	[jing]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь jing. Почтительность, почтительная собранность.]
+	(* <- lang_ru;; *);;
+
+term_gong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[恭 (гун)]
+	(* <- lang_ru;; *);
+	[gong]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь gong. Внешняя почтительность, уважительность.]
+	(* <- lang_ru;; *);;
+
+term_lian
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[廉 (лянь)]
+	(* <- lang_ru;; *);
+	[lian]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь lian. Неподкупность, честность.]
+	(* <- lang_ru;; *);;
+
+term_dao
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[道 (дао)]
+	(* <- lang_ru;; *);
+	[dao]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь dao. Путь, способ, учение.]
+	(* <- lang_ru;; *);;
+
+term_tian
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[天 (тянь)]
+	(* <- lang_ru;; *);
+	[tian]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь tian. Небо; также «день», «природа».]
+	(* <- lang_ru;; *);;
+
+term_tian_ming
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[天命 (тянь мин)]
+	(* <- lang_ru;; *);
+	[tianming]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь tian ming. Мандат Неба, небесное повеление, судьба.]
+	(* <- lang_ru;; *);;
+
+term_li_principle
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[理 (ли, принцип)]
+	(* <- lang_ru;; *);
+	[li (principle)]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь li. Принцип, закономерность; в исходном значении - «прожилки в яшме». Не
+	смешивать с 禮 (ритуал).]
+	(* <- lang_ru;; *);;
+
+term_qi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[氣 (ци)]
+	(* <- lang_ru;; *);
+	[qi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь qi, упрощённое написание 气. Материальная сила, пневма, энергия.]
+	(* <- lang_ru;; *);;
+
+term_taiji
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[太極 (тайцзи)]
+	(* <- lang_ru;; *);
+	[taiji]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь taiji, упрощённое написание 太极. Великий предел.]
+	(* <- lang_ru;; *);;
+
+term_wu_ji
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[無極 (у цзи)]
+	(* <- lang_ru;; *);
+	[wuji]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь wuji, упрощённое написание 无极. Беспредельное.]
+	(* <- lang_ru;; *);;
+
+term_yin_yang
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[陰陽 (инь и ян)]
+	(* <- lang_ru;; *);
+	[yin-yang]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь yinyang, упрощённое написание 阴阳. Пара взаимопревращающихся космических начал.]
+	(* <- lang_ru;; *);;
+
+term_xin_heart
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[心 (синь, сердце)]
+	(* <- lang_ru;; *);
+	[xin (heart-mind)]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь xin. Сердце как орган мышления и нравственного чувства; омонимичен термину 信
+	(благонадёжность), но записывается другим иероглифом.]
+	(* <- lang_ru;; *);;
+
+term_xing
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[性 (син, природа)]
+	(* <- lang_ru;; *);
+	[xing]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь xing. Природа человека.]
+	(* <- lang_ru;; *);;
+
+term_qing
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[情 (цин)]
+	(* <- lang_ru;; *);
+	[qing]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь qing. Чувства, эмоции.]
+	(* <- lang_ru;; *);;
+
+term_ming
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[命 (мин)]
+	(* <- lang_ru;; *);
+	[ming]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь ming. Судьба, предопределение, жизненный предел; повеление.]
+	(* <- lang_ru;; *);;
+
+term_junzi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[君子 (цзюнь-цзы)]
+	(* <- lang_ru;; *);
+	[junzi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь junzi. Буквально «сын правителя»; в конфуцианстве - благородный муж.]
+	(* <- lang_ru;; *);;
+
+term_shengren
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[聖人 (шэн жэнь)]
+	(* <- lang_ru;; *);
+	[shengren]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь shengren, упрощённое написание 圣人. Совершенномудрый.]
+	(* <- lang_ru;; *);;
+
+term_xiaoren
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[小人 (сяо жэнь)]
+	(* <- lang_ru;; *);
+	[xiaoren]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь xiaoren. Буквально «маленький человек»; антоним цзюнь-цзы.]
+	(* <- lang_ru;; *);;
+
+term_shi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[士 (ши)]
+	(* <- lang_ru;; *);
+	[shi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь shi. Книжник, учёный; первое из четырёх сословий.]
+	(* <- lang_ru;; *);;
+
+term_wu_chang
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[五常 (у чан)]
+	(* <- lang_ru;; *);
+	[wuchang]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь wu chang. Пять постоянств: жэнь, и, ли, чжи, синь.]
+	(* <- lang_ru;; *);;
+
+term_san_gang
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[三綱 (сань ган)]
+	(* <- lang_ru;; *);
+	[sangang]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь san gang, упрощённое написание 三纲. Три устоя.]
+	(* <- lang_ru;; *);;
+
+term_wu_lun
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[五倫 (у лунь)]
+	(* <- lang_ru;; *);
+	[wulun]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь wu lun, упрощённое написание 五伦. Пять человеческих отношений.]
+	(* <- lang_ru;; *);;
+
+term_keju
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[科舉 (кэцзюй)]
+	(* <- lang_ru;; *);
+	[keju]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь keju, упрощённое написание 科举. Система имперских экзаменов.]
+	(* <- lang_ru;; *);;
+
+term_ge_wu
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[格物 (гэ у)]
+	(* <- lang_ru;; *);
+	[gewu]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь ge wu. Исследование вещей; первая ступень «Да сюэ».]
+	(* <- lang_ru;; *);;
+
+term_zhi_liangzhi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[致良知 (чжи лян чжи)]
+	(* <- lang_ru;; *);
+	[zhi liangzhi]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zhi liangzhi. Распространение врождённого знания.]
+	(* <- lang_ru;; *);;
+
+term_zhi_xing_he_yi
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[知行合一 (чжи син хэ и)]
+	(* <- lang_ru;; *);
+	[unity of knowledge and action]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zhi xing he yi. Единство знания и действия.]
+	(* <- lang_ru;; *);;
+
+term_zheng_ming
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[正名 (чжэн мин)]
+	(* <- lang_ru;; *);
+	[rectification of names]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zheng ming. Исправление имён.]
+	(* <- lang_ru;; *);;
+
+term_zhong_yong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[中庸 (чжун юн)]
+	(* <- lang_ru;; *);
+	[doctrine of the mean]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь zhong yong. Середина и постоянство.]
+	(* <- lang_ru;; *);;
+
+term_dao_tong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[道統 (дао тун)]
+	(* <- lang_ru;; *);
+	[transmission of the Way]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь dao tong, упрощённое написание 道统. Передача дао, линия ортодоксальной
+	преемственности.]
+	(* <- lang_ru;; *);;
+
+term_da_tong
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[大同 (да тун)]
+	(* <- lang_ru;; *);
+	[great unity]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь da tong. Великое единство, образ идеального общества.]
+	(* <- lang_ru;; *);;
+
+term_tian_ren_gan_ying
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[天人感應 (тянь жэнь гань ин)]
+	(* <- lang_ru;; *);
+	[interaction of Heaven and humankind]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь tian ren gan ying, упрощённое написание 天人感应. Взаимодействие и взаимный отклик
+	Неба и человека.]
+	(* <- lang_ru;; *);;
+
+term_san_gang_ba_mu
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[三綱八目 (сань ган ба му)]
+	(* <- lang_ru;; *);
+	[three guides and eight steps]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь san gang ba mu, упрощённое написание 三纲八目. Три цели и восемь ступеней «Да сюэ».]
+	(* <- lang_ru;; *);;
+
+term_si_duan
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[四端 (сы дуань)]
+	(* <- lang_ru;; *);
+	[four beginnings]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь si duan. Четыре начала добродетелей у Мэн-цзы: сострадание, стыд, уступчивость,
+	различение правильного и неправильного.]
+	(* <- lang_ru;; *);;
+
+term_jing_zuo
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[靜坐 (цзин цзо)]
+	(* <- lang_ru;; *);
+	[quiet sitting]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь jing zuo, упрощённое написание 静坐. Сидение в покое.]
+	(* <- lang_ru;; *);;
+
+term_du_shu
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[讀書 (ду шу)]
+	(* <- lang_ru;; *);
+	[study of books]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь du shu, упрощённое написание 读书. Чтение книг, изучение канонов.]
+	(* <- lang_ru;; *);;
+
+term_san_xing
+<- concept_chinese_term;
+=> nrel_main_idtf:
+	[三省 (сань син)]
+	(* <- lang_ru;; *);
+	[triple self-examination]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Пиньинь san xing. Троекратная самопроверка из «Лунь юй» (1.4).]
+	(* <- lang_ru;; *);;
+

@@ -1,0 +1,80 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Мыслители ханьского и танского этапов.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+dong_zhongshu
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Дун Чжуншу]
+	(* <- lang_ru;; *);
+	[Dong Zhongshu]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Дун Чжуншу (179-104 до н. э.) из Гуанчуани, специалист по «Чуньцю». Его три доклада
+	императору У-ди привели к установлению конфуцианства как государственной идеологии и к
+	созданию системы экзаменов и рекомендаций на должности. Канонизировал пять постоянств (у
+	чан) и три устоя (сань ган).]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zheng_xuan;
+	zhu_xi;
+=> nrel_lived_in_period:
+	dynasty_han;;
+
+zheng_xuan
+<- concept_confucian_thinker;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+=> nrel_main_idtf:
+	[Чжэн Сюань]
+	(* <- lang_ru;; *);
+	[Zheng Xuan]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Чжэн Сюань (127-200) - крупнейший комментатор поздней Хань, объединивший старую и новую
+	текстологические школы; его комментарии к «Чжоу ли», «И ли» и «Ли цзи» легли в основу
+	последующей традиции изучения ритуала.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_lived_in_period:
+	dynasty_han;;
+
+han_yu
+<- concept_confucian_thinker;
+<- concept_confucian_official;
+<- concept_person_of_confucian_tradition;
+<- concept_chinese_philosopher;
+<- concept_east_asian_philosopher;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[Хань Юй]
+	(* <- lang_ru;; *);
+	[Han Yu]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Хань Юй (768-824), танский литератор и чиновник. В трактате «Юань дао» («Исследование о
+	Дао») выстроил линию «передачи дао» (дао тун): Яо - Шунь - Юй - Тан - Вэнь-ван -
+	Чжоу-гун - Конфуций - Мэн-цзы. В 819 г. подал императору «Поминание о кости Будды», за
+	что был сослан.]
+	(* <- lang_ru;; *);
+=> nrel_associated_with_state:
+	empire_china;
+=> nrel_influenced:
+	zhou_dunyi;
+	cheng_hao;
+	cheng_yi;
+	zhu_xi;
+=> nrel_lived_in_period:
+	dynasty_tang;;
+

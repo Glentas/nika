@@ -1,0 +1,56 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   nrel_promotes_virtue - относительное понятие «утверждает добродетель*».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+nrel_promotes_virtue
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[утверждает добродетель*]
+	(* <- lang_ru;; *);
+	[promotes virtue*]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Разные направления расставляют разные акценты: раннее конфуцианство - жэнь и ли,
+	ханьское - чжун и у чан, школа Лу - Ван - чэн и лян чжи.]
+	(* <- lang_ru;; *);
+=> nrel_first_domain: concept_confucian_school;
+=> nrel_second_domain: concept_confucian_virtue;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_confucian_school;
+				concept_confucian_virtue
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (утверждает добродетель*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Утверждает добродетель* - бинарное ориентированное отношение,
+					связывающее направление конфуцианства и добродетель, признаваемую им
+					центральной.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_school;
+				concept_confucian_virtue
+			};;
+	*);;
+

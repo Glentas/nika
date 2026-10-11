@@ -1,0 +1,43 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_mohism - абсолютное понятие «моизм».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_mohism
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[моизм]
+	(* <- lang_ru;; *);
+	[Mohism]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_philosophical_teaching;
+=> nrel_note:
+	[Школа Мо Ди (V-IV вв. до н. э.), проповедовавшая «всеобщую любовь» (цзянь ай) вместо
+	конфуцианской «любви с различениями». Мэн-цзы считал моизм главной угрозой учению
+	Конфуция и прямо полемизировал с ним.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (моизм)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Моизм - философское учение, основанное Мо Ди и выдвинувшее идеал
+					всеобщей равной любви, утилитарную оценку ритуала и выдвижение достойных
+					независимо от происхождения.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_philosophical_teaching
+			};;
+	*);;
+

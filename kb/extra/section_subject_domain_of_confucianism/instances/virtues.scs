@@ -1,0 +1,360 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   Экземпляры: Конфуцианские добродетели.
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+ren
+<- concept_confucian_virtue;
+<- concept_confucian_cardinal_virtue;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[жэнь]
+	(* <- lang_ru;; *);
+	[ren (humaneness)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[человеколюбие]
+	(* <- lang_ru;; *);
+	[гуманность]
+	(* <- lang_ru;; *);
+	[человечность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Высшая добродетель Конфуция. На вопрос Фань Чи о жэнь он ответил: «Любить людей» (Лунь
+	юй, 12.22). Янь Юаню: «Сдержать себя и вернуться к ритуалу - это жэнь» (12.1). В «Лунь
+	юй» понятие объясняется более пятидесяти раз и каждый раз по-разному, применительно к
+	собеседнику.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_ren;;
+
+yi
+<- concept_confucian_virtue;
+<- concept_confucian_cardinal_virtue;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[и]
+	(* <- lang_ru;; *);
+	[yi (righteousness)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[справедливость]
+	(* <- lang_ru;; *);
+	[долг]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Должное поведение, противопоставленное выгоде (ли 利). «Благородный муж понимает долг,
+	малый человек понимает выгоду» (Лунь юй, 4.16). Мэн-цзы выводил и из чувства стыда.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_yi;;
+
+li_ritual
+<- concept_confucian_virtue;
+<- concept_confucian_cardinal_virtue;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[ли]
+	(* <- lang_ru;; *);
+	[li (ritual propriety)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[ритуал]
+	(* <- lang_ru;; *);
+	[благопристойность]
+	(* <- lang_ru;; *);
+	[этикет]
+	(* <- lang_ru;; *);
+	[церемониал]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Добровольно соблюдаемая норма поведения, охватывающая и церемонию, и повседневный
+	этикет. «Не смотри на то, что противоречит ли; не слушай того, что противоречит ли»
+	(Лунь юй, 12.1). Сюнь-цзы считал ли средством исправления порочной природы.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_li_ritual;;
+
+zhi_wisdom
+<- concept_confucian_virtue;
+<- concept_confucian_cardinal_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[чжи]
+	(* <- lang_ru;; *);
+	[zhi (wisdom)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[мудрость]
+	(* <- lang_ru;; *);
+	[знание]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Способность различать правильное и неправильное и распознавать людей. «Умный радуется
+	воде, человеколюбивый радуется горам» (Лунь юй, 6.23). Мэн-цзы выводил чжи из «сердца
+	различения».]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zhi;;
+
+xin_trust
+<- concept_confucian_virtue;
+<- concept_confucian_cardinal_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[синь (благонадёжность)]
+	(* <- lang_ru;; *);
+	[xin (trustworthiness)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[благонадёжность]
+	(* <- lang_ru;; *);
+	[верность слову]
+	(* <- lang_ru;; *);
+	[искренность слова]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Соответствие слова делу. «Если человек неблагонадёжен, не знаю, на что он годен» (Лунь
+	юй, 2.22). На вопрос о управлении Конфуций ответил, что из трёх условий (войско,
+	пропитание, доверие народа) доверие нельзя терять последним (12.7).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xin_trust;;
+
+xiao
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[сяо]
+	(* <- lang_ru;; *);
+	[xiao (filial piety)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[сыновняя почтительность]
+	(* <- lang_ru;; *);
+	[сыновняя любовь]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Почтение к родителям и предкам, считавшееся корнем жэнь: «Почтительный сын и
+	уважительный младший брат редко склонны к мятежу» (Лунь юй, 1.2). Специальный канон «Сяо
+	цзин» и трёхлетний траур закрепляют сяо как основу порядка.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_xiao;;
+
+ti_fraternity
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[ди]
+	(* <- lang_ru;; *);
+	[ti (fraternal duty)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[братское почтение]
+	(* <- lang_ru;; *);
+	[уважение к старшим]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Уважение младшего брата к старшему; вместе с сяо образует пару семейных добродетелей,
+	распространяемых затем на общество.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_ti;;
+
+zhong_loyalty
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[чжун]
+	(* <- lang_ru;; *);
+	[zhong (loyalty)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[преданность]
+	(* <- lang_ru;; *);
+	[верность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Преданность государю и делу, но не безусловная: Мэн-цзы утверждал, что правитель,
+	относящийся к подданным как к грязи, получает в ответ вражду. Позднее, при Мин и Цин,
+	чжун был ужесточён до самопожертвования.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_zhong;;
+
+shu_reciprocity
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[шу]
+	(* <- lang_ru;; *);
+	[shu (reciprocity)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[взаимность]
+	(* <- lang_ru;; *);
+	[снисходительность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[«Того, чего не желаешь себе, не делай другим» (Лунь юй, 15.24) - формула, известная как
+	золотое правило. Вместе с чжун образует «единое всепроникающее дао» учения Конфуция
+	(4.15).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_shu;;
+
+yong_courage
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[юн]
+	(* <- lang_ru;; *);
+	[yong (courage)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[мужество]
+	(* <- lang_ru;; *);
+	[смелость]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мужество, подчинённое долгу: «Благородный муж, обладающий смелостью, но не знающий
+	долга, станет мятежником» (Лунь юй, 17.23). В «Чжун юн» юн назван одним из трёх всеобщих
+	качеств (сань да дэ) вместе с чжи и жэнь.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_yong;;
+
+wen_culture
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[вэнь]
+	(* <- lang_ru;; *);
+	[wen (culture)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[культурность]
+	(* <- lang_ru;; *);
+	[образованность]
+	(* <- lang_ru;; *);
+	[письменная культура]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Приобщённость к письменной культуре и её формам; «изящество в соотношении с сущностью» -
+	условие благородного мужа: «Если сущность преобладает над вэнь, получаем грубость; если
+	вэнь преобладает над сущностью - книжность» (Лунь юй, 6.18).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_wen;;
+
+de_virtue
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[дэ]
+	(* <- lang_ru;; *);
+	[de (virtue, potency)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[добродетель]
+	(* <- lang_ru;; *);
+	[благодать]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Действенная сила нравственности: правление через дэ Конфуций сравнил с Полярной звездой,
+	которая остаётся на месте, а все прочие звёзды ей почтительно предстоят (Лунь юй, 2.1).
+	Понятие общее для конфуцианства и даосизма.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_de;;
+
+cheng_sincerity
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[чэн]
+	(* <- lang_ru;; *);
+	[cheng (sincerity)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[искренность]
+	(* <- lang_ru;; *);
+	[подлинность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[В «Чжун юн» чэн - одновременно нравственное качество и космологическое начало:
+	«Искренность - это путь Неба; обретение искренности - путь человека». У Чжоу Дуньи чэн
+	становится основой природы совершенномудрого.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_cheng;;
+
+jing_reverence
+<- concept_confucian_virtue;
+<- concept_confucian_self_cultivation_method;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[цзин]
+	(* <- lang_ru;; *);
+	[jing (reverence)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[почтительность]
+	(* <- lang_ru;; *);
+	[почтительная собранность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[У Чэн И и Чжу Си - ключевое внутреннее состояние: «соблюдать почтительность, чтобы
+	упорядочить себя, исследовать вещи, чтобы расширить знание». В корейском
+	неоконфуцианстве цзин сделалось центральным понятием школы Ли Хвана.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_jing;;
+
+gong_respect
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[гун]
+	(* <- lang_ru;; *);
+	[gong (respect)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[почтительность (внешняя)]
+	(* <- lang_ru;; *);
+	[уважительность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Внешняя почтительность в обращении с людьми; в «Лунь юй» (17.6) Конфуций называет пять
+	качеств, распространяющих жэнь: гун (почтительность), куань (великодушие), синь
+	(благонадёжность), минь (прилежание), хуэй (благодеяние).]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_gong;;
+
+lian_integrity
+<- concept_confucian_virtue;
+<- concept_confucian_concept;
+=> nrel_main_idtf:
+	[лянь]
+	(* <- lang_ru;; *);
+	[lian (integrity)]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[неподкупность]
+	(* <- lang_ru;; *);
+	[честность]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Неподкупность чиновника; в позднем имперском конфуцианстве вместе с ли, и, чжи, синь
+	входила в перечень качеств, оцениваемых при аттестации служащих.]
+	(* <- lang_ru;; *);
+=> nrel_chinese_term:
+	term_lian;;
+

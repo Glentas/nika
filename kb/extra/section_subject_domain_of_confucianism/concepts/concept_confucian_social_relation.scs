@@ -1,0 +1,42 @@
+/* База знаний системы NIKA. ЛР №1 дисциплины ТиИСПИС.
+   Вариант №130: Конфуцианство. Каталог section_subject_domain_of_confucianism
+   копируется в nika/kb/extra/ (ветка tpis-2023).
+   concept_confucian_social_relation - абсолютное понятие «конфуцианское социальное отношение».
+   Фактический слой - по открытым энциклопедическим источникам. */
+
+concept_confucian_social_relation
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+	[конфуцианское социальное отношение]
+	(* <- lang_ru;; *);
+	[Confucian social relation]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_confucian_concept;
+=> nrel_note:
+	[Пять человеческих отношений (у лунь): государь и подданный, отец и сын, муж и жена,
+	старший и младший, друзья. Каждому предписана своя добродетель; три из них вошли в «три
+	устоя» (сань ган) Дун Чжуншу.]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (конфуцианское социальное отношение)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example:
+					[Конфуцианское социальное отношение - понятие конфуцианской традиции,
+					описывающее нормативную связь между двумя социальными позициями.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_confucian_concept
+			};;
+	*);;
+
